@@ -1,0 +1,10 @@
+
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(€Êûœþÿÿÿÿ
+Osquid:S2209"5Change this instance-reference to a static reference.(éÄä©ýÿÿÿÿ
+Osquid:S1161":Add the "@Override" annotation above this method signature(“–ýþ
+[squid:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+Wsquid:S2094"BRemove this empty class, write its code or make it an "interface".(†ïÂ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Å¶ûÄùÿÿÿÿ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(»ž•ûÿÿÿÿ
+Osquid:S1161":Add the "@Override" annotation above this method signature(“–ýþ

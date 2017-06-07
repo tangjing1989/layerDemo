@@ -1,0 +1,29 @@
+
+qsquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’«¨şÿÿÿÿ
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ç•ôŞ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¦æÖˆüÿÿÿÿ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ºŠÃ¾ÿÿÿÿÿ
+nsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(½¦
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(÷òˆÅıÿÿÿÿ
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(şßÙ
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(í¤ˆÁ
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(õåóâ
+Bsquid:S1481"(Remove this unused "cfg" local variable.(Åì¡¶ÿÿÿÿÿ
+ssquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(™ºöºıÿÿÿÿ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ï”ø‘üÿÿÿÿ
+Psquid:S1854";Remove this useless assignment to local variable "focList".(½¦
+Qsquid:S1854"7Remove this useless assignment to local variable "cfg".(Åì¡¶ÿÿÿÿÿ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(—›÷…ùÿÿÿÿ
+Asquid:S1481",Remove this unused "focList" local variable.(½¦
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(İ—ñÆ
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Å±³¬
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(õåóâ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ã„úÿÿÿÿ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ı©Åûÿÿÿÿ
+Csquid:S1313".Make this IP "127.0.0.1" address configurable.( æ§û
+Tsquid:S1118":Add a private constructor to hide the implicit public one.(Ëè·“ıÿÿÿÿ
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(çĞä›
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÆÊÜ¥
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(åÁŠóøÿÿÿÿ
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Å±³¬

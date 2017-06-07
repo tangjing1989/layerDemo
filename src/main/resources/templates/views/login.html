@@ -1,0 +1,219 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>统一监控平台-登陆</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" th:href="${#httpServletRequest.getContextPath()}+'/assets/layui/css/layui.css'" media="all">
+    <link rel="stylesheet" th:href="${#httpServletRequest.getContextPath()}+'/assets/layui/css/global.css'"
+          charset="utf-8">
+    <script type="application/javascript"
+            th:src="${#httpServletRequest.getContextPath()}+'/assets/jquery/jquery-1.12.4.js'"></script>
+    <script type="application/javascript" th:src="${#httpServletRequest.getContextPath()}+'/assets/layui/layui.js'"
+            charset="utf-8"></script>
+    <script type="application/javascript" th:src="${#httpServletRequest.getContextPath()}+'/assets/layui/js/common.js'"
+            charset="utf-8"></script>
+    <script type="application/javascript"
+            th:src="${#httpServletRequest.getContextPath()}+'/assets/coustom/js/Line1Demo.js'" charset="utf-8"></script>
+    <style type="text/css">
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .main {
+            width: 320px;
+            height: 220px;
+            margin-top: -43%;
+            margin-left: 35%;
+            background-color: transparent;
+            color: #fff;
+        }
+
+        .layui-form-label {
+            padding: 25px 25px;
+        }
+
+        .Huialert {
+            position: relative;
+            padding: 0px 35px 0px 14px;
+            margin-bottom: 10px;
+            text-shadow: 0 0.8px 0 rgba(255, 255, 255, 0.5);
+            background-color: #fcf8e3;
+            border: 1px solid #fbeed5;
+            font-size: 13px
+        }
+
+        .Huialert, .Huialert h4 {
+            color: #c09853
+        }
+
+        .Huialert h4 {
+            margin: 0
+        }
+
+        .Huialert .Hui-iconfont {
+            position: absolute;
+            top: 9px;
+            right: 10px;
+            line-height: 20px;
+            cursor: pointer;
+            color: #000;
+            opacity: 0.2;
+            _color: #666
+        }
+
+        .Huialert .Hui-iconfont.hover {
+            color: #000;
+            opacity: 0.8
+        }
+
+        .Huialert-success {
+            color: #468847;
+            background-color: #dff0d8;
+            border-color: #d6e9c6
+        }
+
+        .Huialert-success h4 {
+            color: #468847
+        }
+
+        .Huialert-danger {
+            color: #b94a48;
+            background-color: #f2dede;
+            border-color: #eed3d7
+        }
+
+        .Huialert-danger h4 {
+            color: #b94a48
+        }
+
+        .Huialert-error {
+            color: #fff;
+            background-color: #f37b1d;
+            border-color: #e56c0c
+        }
+
+        .Huialert-error h4 {
+            color: #fff
+        }
+
+        .Huialert-info {
+            color: #31708f;
+            background-color: #d9edf7;
+            border-color: #bce8f1
+        }
+
+        .Huialert-info h4 {
+            color: #31708f
+        }
+
+        .Huialert-block {
+            padding-top: 14px;
+            padding-bottom: 14px
+        }
+
+        .Huialert-block > p, .Huialert-block > ul {
+            margin-bottom: 0
+        }
+
+        .Huialert-block p + p {
+            margin-top: 5px
+        }
+
+    </style>
+</head>
+<body>
+
+<canvas id="canvas-banner" style="background: #393D49;width: 100%;height: 100%"></canvas>
+<div class="main" id="mainId">
+    <fieldset class="layui-form layui-form-pane layui-form-label " style="text-align:left;width: auto;height: auto" >
+        <legend style="text-align: center;">统一监控平台</legend>
+        <div th:if="${message}" class="Huialert Huialert-error"><i th:text="${message.note}"/></div>
+        <form class="layui-form " th:action="${#httpServletRequest.getContextPath()}+'/login.htm'" method="post"
+              id="formId">
+            <div class="layui-form-item">
+                <div class="layui-input-inner">
+                    <input value="" autocomplete="off" class="layui-input" lay-verify="required" name="userCode"
+                           placeholder="请输入帐号" required="" type="text" style="border:1;background-color: transparent;width: 220px">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-form-item">
+                    <input type="password" name="password" lay-verify="pass" placeholder="请输入密码" autocomplete="off"
+                           class="layui-input" style="border:1;background-color: transparent;width: 220px">
+                </div>
+            </div>
+
+            <div class="layui-form-item" th:if="${enableVerif}=='true'">
+                <div class="layui-inline">
+                    <input type="text"  placeholder="请输入验证码" autocomplete="off" name="verifCode"
+                           class="layui-input" style="border:1;background-color: transparent;width: 125px">
+
+                </div>
+                <div class="layui-inline">
+                    <img src="code/captcha-image" onclick="changeCode()" id="kaptchaImage" />
+                </div>
+            </div>
+
+            <div class="layui-form-item" style="text-align: center;">
+                <div class="layui-inline">
+                    <button class="layui-btn" lay-submit lay-filter="login">登录</button>
+                </div>
+                <div class="layui-inline">
+                    <button class="layui-btn layui-btn-primary" type="reset" id="resetId">重置</button>
+                </div>
+            </div>
+
+        </form>
+    </fieldset>
+</div>
+<script type="application/javascript">
+    $(function () {
+        DrawCanvas();
+    })
+    layui.use(['form', 'layedit', 'laydate'], function () {
+        var form = layui.form(), layer = layui.layer;
+        //监听提交
+        form.on('submit(login)', function (data) {
+            if (JSON.stringify(data.field)) {
+
+                $("form").submit();
+//                var data = $("form").serialize();
+//                $.axspost("add.json", data, function (e) {
+//                    if (e.success) {
+//                        window.parent.layer.msg(e.msg);
+//                    }
+//                    if (!e.success) {
+//                        layer.msg(e.msg);
+//                    }
+//                }, function (e) {
+//                    layer.alert(e.msg);
+//                });
+            }
+
+            return false;
+        });
+    });
+    function changeCode() {  //刷新
+        $('#kaptchaImage').hide().attr('src', 'code/captcha-image?' + Math.floor(Math.random() * 100)).fadeIn();
+        event.cancelBubble = true;
+    }
+
+
+</script>
+
+<script>
+        window.onload = function () {
+            setTimeout(function(){
+                document.getElementById("resetId").click();
+            },200)
+        }
+</script>
+</body>
+</html>a

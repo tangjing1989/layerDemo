@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tangjing.web.dao.SysManageDataBaseMapper">
+    <!-- redis缓存 -->
+    <!--<cache eviction="LRU" type="com.cn.web.redis2.RedisCache"/>-->
+    <resultMap id="TableMaper" type="com.tangjing.web.pojo.TablePojo">
+        <result column="TABLE_NAME" property="tableName" javaType="String" jdbcType="VARCHAR"></result>
+        <result column="TABLE_TYPE" property="tableType" javaType="String" jdbcType="VARCHAR"></result>
+        <result column="TABLE_ROWS" property="tableRow" javaType="Long" jdbcType="BIGINT"></result>
+        <result column="CREATE_TIME" property="crtDate" javaType="java.sql.Timestamp" jdbcType="TIMESTAMP"></result>
+        <result column="UPDATE_TIME" property="uptDate" javaType="java.sql.Timestamp" jdbcType="TIMESTAMP"></result>
+        <result column="ROWNO" property="rowNumber" javaType="String" jdbcType="VARCHAR"></result>
+    </resultMap>
+
+
+    <select id="queryListCount" resultType="int">
+        SELECT count(-1) FROM information_schema.Tables t
+
+        WHERE t.TABLE_SCHEMA =#{tableSchema}
+    </select>
+
+    <select id="queryListPage" resultMap="TableMaper">
+       SELECT * FROM (
+		SELECT
+			@rowno :=@rowno + 1 AS rowno ,
+			r.*
+		FROM
+			information_schema. TABLES r,
+			(SELECT @rowno := 0) t
+      WHERE
+			r.TABLE_SCHEMA = #{tableSchema}
+		ORDER BY
+			r.UPDATE_TIME DESC
+	) temp
+
+        Limit #{pojo.start},#{pojo.end}
+    </select>
+
+    <update id="createTable" statementType="STATEMENT">
+        create table if not exists ${tableName}
+        <!--<foreach collection="map.keys" item="k" index="index" open="(" separator="," close=");">-->
+        <!--${k}  ${params[${k}]} not null-->
+        <!--</foreach>-->
+
+        <!--<foreach item="value" index="key" collection="map.entrySet()" open="(" separator="," close=")">-->
+        <foreach collection="sqls" index="index" item="item" open="(" separator="," close=")">
+            ${item}
+        </foreach>
+    </update>
+
+</mapper>

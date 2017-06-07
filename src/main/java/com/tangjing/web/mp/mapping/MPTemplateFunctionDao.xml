@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tangjing.web.mp.dao.MPTemplateFunctionDao">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="com.tangjing.web.mp.pojo.TemplateFunction">
+		<id column="TEMPLATEID" property="templateid" />
+		<result column="TEMPLATENAME" property="templatename" />
+		<result column="TEMPLATEDESC" property="templatedesc" />
+		<result column="CRTDATE" property="crtdate" />
+		<result column="UPDDATE" property="upddate" />
+	</resultMap>
+
+</mapper>

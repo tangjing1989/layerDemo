@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${logFile}</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${logFile}.%d.zip</fileNamePattern>
+            <maxHistory>5</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>[%date] [%level] %msg [%file:%line] [%logger{100}] [%thread] [AspLink-${project.version}]%n</pattern>
+        </encoder>
+    </appender>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>[AspLink-${project.version}] [%level] %msg [%file:%line] [%logger{100}]%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="liquibase" level="INFO"/>
+    <logger name="com.tangjing.web.dao" level="INFO"/>
+    <logger name="org.mybatis">
+        <level value="TRACE"/>
+    </logger>
+
+    <root level="INFO">
+        <appender-ref ref="FILE"/>
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>

@@ -1,0 +1,12 @@
+
+›squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Àø’ìúÿÿÿÿ
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(ƒ»—î
+Jsquid:S1444"5Make this "public static SYS_SERVER_TYPE" field final(÷‚½Î
+‡"squid:ClassVariableVisibilityCheck"[Make SYS_SERVER_TYPE a static final constant or non-public and provide accessors if needed.(÷‚½Î
+‚"squid:ClassVariableVisibilityCheck"VMake IS_KAPTCHA a static final constant or non-public and provide accessors if needed.(¿£ð³
+Jsquid:S2209"5Change this instance-reference to a static reference.(ƒ»—î
+Esquid:S1444"0Make this "public static IS_KAPTCHA" field final(¿£ð³
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(ÄÉëŠüÿÿÿÿ
+osquid:S3008"ZRename this field "SYS_SERVER_TYPE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷‚½Î
+jsquid:S3008"URename this field "IS_KAPTCHA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿£ð³
+Osquid:S2209"5Change this instance-reference to a static reference.(ÄÉëŠüÿÿÿÿ

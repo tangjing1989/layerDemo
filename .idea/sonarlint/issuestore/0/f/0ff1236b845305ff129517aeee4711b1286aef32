@@ -1,0 +1,10 @@
+
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ë“í
+Bsquid:S1481"(Remove this unused "row" local variable.(±ÚÎõúÿÿÿÿ
+fsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(ßüÞ.
+Msquid:S1854"8Remove this useless assignment to local variable "temp".(×½ø«
+Nsquid:S1161":Add the "@Override" annotation above this method signature(ßüÞ.
+Dsquid:S00108")Either remove or fill this block of code.(±ÚÎõúÿÿÿÿ
+Osquid:S1161":Add the "@Override" annotation above this method signature(ËÝÃ
+6squid:S1643"Use a StringBuilder instead.(¥‹««ÿÿÿÿÿ
+1squid:S1643"Use a StringBuilder instead.(ëÈø

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tangjing.web.dao.FuncTemplateDao">
+
+
+    <select id="count" resultType="int">
+        SELECT COUNT (-1) from TEMPLATEFUNCTION
+    </select>
+
+    <select id="queryListPage" resultType="list" parameterType="map">
+        select * from (
+        SELECT
+        @rowno :=@rowno + 1 AS rowno ,
+        r.*
+        FROM
+        TEMPLATEFUNCTION r ,
+        (SELECT @rowno := 0) t
+        <where>
+            <if test='pojo.paramMap.param1!=null and pojo.paramMap.param1!=""'>
+                <![CDATA[ AND CRTDATE >= #{pojo.paramMap.param1}  ]]>
+            </if>
+            <if test='pojo.paramMap.param2!=null and pojo.paramMap.param2!=""'>
+                <![CDATA[ AND CRTDATE <= #{pojo.paramMap.param2} ]]>
+            </if>
+            <if test='pojo.paramMap.param3!=null and pojo.paramMap.param3!=""'>
+                <![CDATA[ AND USERNAME like '%${pojo.paramMap.param3}%' ]]>
+            </if>
+        </where>
+        order by r.userId asc
+        ) temp
+
+        Limit #{pojo.start},#{pojo.end}
+
+    </select>
+</mapper>

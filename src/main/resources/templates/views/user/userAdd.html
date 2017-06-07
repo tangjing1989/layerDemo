@@ -1,0 +1,116 @@
+<!doctype html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <title>layui</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script src="../assets/jquery/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="../assets/layui/css/layui.css" media="all">
+    <script src="../assets/layui/layui.js" charset="utf-8"></script>
+    <script src="../assets/layui/js/common.js" charset="utf-8"></script>
+    <link th:href="${#httpServletRequest.getContextPath()}+'/assets/coustom/css/fort.css'" rel="stylesheet">
+    <script type="application/javascript" th:src="${#httpServletRequest.getContextPath()}+'/assets/coustom/js/fort.js'"
+            charset="utf-8"></script>
+
+</head>
+<body>
+<form class="layui-form layui-form-pane form" style="margin-top: 20px;margin-right: 20px;margin-left: 20px">
+    <!--表单填写进度条开始-->
+    <div class="top">
+        <div class="colors">
+        </div>
+    </div>
+    <!--表单填写进度条结束-->
+    <div class="layui-form-item">
+        <label class="layui-form-label">用户名称</label>
+        <div class="layui-input-inline">
+            <input placeholder="请输入用户名称" autocomplete="off" lay-verify="required" class="layui-input"
+                   name="userName">
+        </div>
+        <label class="layui-form-label">用户登录名</label>
+        <div class="layui-input-inline">
+            <input placeholder="请输入登录名" autocomplete="off" lay-verify="required" class="layui-input"
+                   name="userCode">
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">密码</label>
+        <div class="layui-input-inline">
+            <input type="password" placeholder="请输入密码" lay-verify="pass" autocomplete="off" class="layui-input"
+                   id="password1" name="password">
+        </div>
+        <label class="layui-form-label">重复密码</label>
+        <div class="layui-input-inline">
+            <input type="password" placeholder="请输入密码" lay-verify="pass|pass1" autocomplete="off"
+                   class="layui-input" id="password2">
+        </div>
+    </div>
+    </div>
+    <div class="layui-form-item ">
+        <button class="layui-btn layedit-tool-right" lay-submit="" lay-filter="demo1">提交</button>
+    </div>
+</form>
+
+
+<script>
+    solid();
+    layui.use(['form', 'layedit', 'laydate'], function () {
+        var form = layui.form()
+            , layer = layui.layer
+            , layedit = layui.layedit
+            , laydate = layui.laydate;
+
+        //创建一个编辑器
+        var editIndex = layedit.build('LAY_demo_editor');
+
+        //自定义验证规则
+        form.verify({
+            pass: [/(.+){6,12}$/, '密码必须6到12位'],
+            pass1: function (value) {
+                if ($("#password1").val() != $("#password2").val()) {
+                    return '2次密码输入不一致';
+                }
+            },
+        });
+
+//        //监听指定开关
+//        form.on('switch(switchTest)', function (data) {
+//            layer.msg('开关checked：' + (this.checked ? 'true' : 'false'), {
+//                offset: '6px'
+//            });
+//            layer.tips('温馨提示：请注意开关状态的文字可以随意定义，而不仅仅是ON|OFF', data.othis)
+//        });
+
+        //监听提交
+        form.on('submit(demo1)', function (data) {
+            if (JSON.stringify(data.field)) {
+                var data = $("form").serialize();
+                $.axspost("add.json", data, function (e) {
+                    if (e.success) {
+                        var index = parent.layer.getFrameIndex(window.name);
+                        window.parent.query(0);
+                        parent.layer.close(index);
+                        window.parent.layer.msg(e.msg);
+
+                    }
+                    if (!e.success) {
+                        layer.msg(e.msg);
+                        //init();
+                    }
+                }, function (e) {
+                    layer.alert(e.msg);
+                });
+            }
+
+            return false;
+        });
+    });
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tangjing.web.dao.SysMapper">
+    <resultMap id="MenuMapper" type="com.tangjing.web.pojo.MenuPojo">
+        <id column="MENUID" property="menuId" javaType="int" jdbcType="INTEGER"></id>
+        <result column="MENUCODE" property="menuCode" javaType="string" jdbcType="VARCHAR"></result>
+        <result column="MENUNAME" property="menuName" javaType="string" jdbcType="VARCHAR"></result>
+        <result column="MENUHREF" property="menuHref" javaType="string" jdbcType="VARCHAR"></result>
+        <result column="PARENTCODE" property="parentCode" javaType="string" jdbcType="VARCHAR"></result>
+        <result column="IMGTEXT" property="imgText" javaType="string" jdbcType="VARCHAR"></result>
+    </resultMap>
+
+    <select id="queryMenuByLev" resultMap="MenuMapper">
+        SELECT * from MENU where LENGTH (MENUCODE) =#{lev} order by  MENUCODE asc
+    </select>
+
+</mapper>

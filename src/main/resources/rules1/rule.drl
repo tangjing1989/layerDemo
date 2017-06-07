@@ -1,0 +1,38 @@
+package com.tangjing.drools
+
+//导入自定义的实体类
+import com.tangjing.drools.Message
+
+
+rule "test"
+    when
+     eval(true)
+    then
+        System.out.println("111111111111111");
+    end
+
+//规则名
+rule "rule1"
+    //no-loop true //执行一次后，是否能被再次激活
+    //salience 100 //优先级别
+    //条件语句
+    when
+        //当该实体的status属性为HELLO的时候，将该实体赋值给m，实体的message属性赋值给printMsg
+        message : Message( status == Message.HELLO,printMsg : message)
+    //满足条件之后要做的事情
+    then
+        //系统输出和重新设置实体属性
+        System.out.println( "来了--------------");
+         message.setMessage( "Goodbye~" );
+        message.setStatus( Message.GOODBYE );
+        //更新实体，会重新触发规则
+        update(message);
+end
+
+//第二个规则
+rule "GoodBye"
+    when
+        Message( status == Message.GOODBYE, printMsg : message )
+    then
+        System.out.println( printMsg );
+end

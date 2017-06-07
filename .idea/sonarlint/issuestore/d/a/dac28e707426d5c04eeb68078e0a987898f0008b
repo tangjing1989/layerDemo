@@ -1,0 +1,390 @@
+
+Z!javascript:UnusedFunctionArgument"/Remove the unused function parameter "exports".(›§Ì
+Ajavascript:CommentedCode"Remove this commented out code.(Àµ‡î
+Njavascript:S1854"4Remove this useless assignment to local variable "j"(Ó®½
+Ajavascript:CommentedCode"Remove this commented out code.(Üîæİ
+i!javascript:ExcessiveParameterList">Function has 10 parameters which is greater than 7 authorized.(ñ²‘¬
+Ajavascript:CommentedCode"Remove this commented out code.(ÓúõÃ
+Ajavascript:CommentedCode"Remove this commented out code.(¤®Ö¢
+njavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(°§%
+Ejavascript:BitwiseOperators" Remove the use of ">>" operator.(·É–¼
+sjavascript:S3776"TRefactor this function to reduce its Cognitive Complexity from 67 to the 15 allowed.(•ç½ıÿÿÿÿÿ
+Z!javascript:UnusedFunctionArgument"/Remove the unused function parameter "exports".(›§Ì
+javascript:S3757"`Change the expression which uses this operand so that it can't evaluate to "NaN" (Not a Number).(ÆÃÁ¢ùÿÿÿÿ
+^javascript:S1134"DTake the required action to fix the issue indicated by this comment.(ÇŸéã
+Z!javascript:UnusedFunctionArgument"/Remove the unused function parameter "exports".(›§Ì
+[!javascript:UnusedFunctionArgument"+Remove the unused function parameter "ctx".(à­’ıÿÿÿÿ
+njavascript:S3776"TRefactor this function to reduce its Cognitive Complexity from 17 to the 15 allowed.(Ùû²Ñ
+ajavascript:UnusedVariable"9Remove the declaration of the unused 'waveLeft' variable.(‘˜õÒÿÿÿÿÿ
+\javascript:UnusedVariable"9Remove the declaration of the unused 'controls' variable.(­•ù
+_javascript:S2814"ERename "t1" as this name is already used in declaration at line 8219.(ôŒ›‡
+Fjavascript:CommentedCode"Remove this commented out code.(“©ìşÿÿÿÿ
+Ijavascript:BitwiseOperators"Remove the use of "&" operator.(Î©È×üÿÿÿÿ
+Ljavascript:S1135"2Complete the task associated to this TODO comment.(Ê˜ìå
+Fjavascript:CommentedCode"Remove this commented out code.(ÖÕ¡äúÿÿÿÿ
+Ijavascript:BitwiseOperators"Remove the use of "|" operator.(˜Š†şÿÿÿÿ
+Z!javascript:UnusedFunctionArgument"/Remove the unused function parameter "exports".(›§Ì
+zjavascript:S3757"`Change the expression which uses this operand so that it can't evaluate to "NaN" (Not a Number).(İ…×
+m!javascript:ExcessiveParameterList"=Function has 9 parameters which is greater than 7 authorized.(ğ‡²™ûÿÿÿÿ
+Jjavascript:BitwiseOperators" Remove the use of "<<" operator.(ïÚì€ûÿÿÿÿ
+_javascript:S2583"EChange this condition so that it does not always evaluate to "false".(—Àß§
+Ajavascript:CommentedCode"Remove this commented out code.(¦„ø’
+Ijavascript:BitwiseOperators"Remove the use of "&" operator.(ªÉóÈøÿÿÿÿ
+Ijavascript:BitwiseOperators"Remove the use of "&" operator.(Í±äıÿÿÿÿ
+^javascript:S3358"DExtract this nested ternary operation into an independent statement.(¯Éºö
+@javascript:CommentedCode"Remove this commented out code.(šå“o
+pjavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(Óöšû
+Z!javascript:UnusedFunctionArgument"/Remove the unused function parameter "exports".(›§Ì
+Sjavascript:S1854"9Remove this useless assignment to local variable "value0"(×ŠİÛ
+Ajavascript:CommentedCode"Remove this commented out code.(Ä¯×˜
+sjavascript:S3776"TRefactor this function to reduce its Cognitive Complexity from 26 to the 15 allowed.(ÂˆÏ®øÿÿÿÿ
+h!javascript:ExcessiveParameterList"=Function has 8 parameters which is greater than 7 authorized.(¯ø×Ò
+tjavascript:S1067"ZReduce the number of conditional operators (8) used in the expression (maximum allowed 3).(ª»üå
+_javascript:S2814"ERename "j" as this name is already used in declaration at line 10574.(ş»ù
+javascript:S3757"`Change the expression which uses this operand so that it can't evaluate to "NaN" (Not a Number).(éÑ‰·şÿÿÿÿ
+djavascript:S2814"ERename "t1" as this name is already used in declaration at line 8486.(Œ‘Ãøÿÿÿÿ
+Fjavascript:CommentedCode"Remove this commented out code.(ìÒŒºüÿÿÿÿ
+Fjavascript:CommentedCode"Remove this commented out code.(¬é“„ıÿÿÿÿ
+Djavascript:BitwiseOperators"Remove the use of "&" operator.(Ò¦ò¯
+yjavascript:S1067"ZReduce the number of conditional operators (4) used in the expression (maximum allowed 3).(»äô–ıÿÿÿÿ
+zjavascript:S3757"`Change the expression which uses this operand so that it can't evaluate to "NaN" (Not a Number).(€¦«
+Djavascript:BitwiseOperators"Remove the use of "&" operator.(Ò¦ò¯
+h(javascript:VariableDeclarationAfterUsage"1Move the declaration of "util" before this usage.(¼¦­Èúÿÿÿÿ
+^javascript:S1134"DTake the required action to fix the issue indicated by this comment.(÷Ã“
+m!javascript:ExcessiveParameterList"=Function has 8 parameters which is greater than 7 authorized.(ù©é¿úÿÿÿÿ
+cjavascript:OneStatementPerLine"6Reformat the code to have only one statement per line.(²ÍÅÇüÿÿÿÿ
+Z!javascript:UnusedFunctionArgument"/Remove the unused function parameter "exports".(›§Ì
+tjavascript:S1067"ZReduce the number of conditional operators (7) used in the expression (maximum allowed 3).(ş…×“
+[!javascript:UnusedFunctionArgument"+Remove the unused function parameter "ctx".(ØÙË—øÿÿÿÿ
+pjavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(Ûæò
+sjavascript:S3776"TRefactor this function to reduce its Cognitive Complexity from 70 to the 15 allowed.(èí‡¥úÿÿÿÿ
+Ljavascript:S1135"2Complete the task associated to this TODO comment.(‹Íş»
+Ejavascript:BitwiseOperators" Remove the use of ">>" operator.(Ò¦ò¯
+`javascript:S2814"FRename "tmp" as this name is already used in declaration at line 9057.(öğÖ©
+Wjavascript:UnusedVariable"4Remove the declaration of the unused 'psi' variable.(ûÔéó
+cjavascript:OneStatementPerLine"6Reformat the code to have only one statement per line.(²ÍÅÇüÿÿÿÿ
+djavascript:S2814"ERename "x_" as this name is already used in declaration at line 9022.(½À¯øÿÿÿÿ
+Ajavascript:CommentedCode"Remove this commented out code.(¶
+Ajavascript:CommentedCode"Remove this commented out code.(úêËÎ
+Jjavascript:BitwiseOperators" Remove the use of "<<" operator.(ïÚì€ûÿÿÿÿ
+cjavascript:OneStatementPerLine"6Reformat the code to have only one statement per line.(²ÍÅÇüÿÿÿÿ
+`javascript:S2814"FRename "len" as this name is already used in declaration at line 2321.(İæÓÊ
+^javascript:S1134"DTake the required action to fix the issue indicated by this comment.(÷Ã“
+bjavascript:S2814"HRename "value" as this name is already used in declaration at line 5420.(ìµÎ±
+h!javascript:ExcessiveParameterList">Function has 11 parameters which is greater than 7 authorized.(«¨Ü)
+Z!javascript:UnusedFunctionArgument"/Remove the unused function parameter "context".(Ä”€Æ
+=javascript:S2228"Remove this logging statement.(Ä½ªóøÿÿÿÿ
+ojavascript:S3758"URe-evaluate the data flow; this operand of a numeric comparison could be "undefined".(ãÈò
+Z!javascript:UnusedFunctionArgument"/Remove the unused function parameter "exports".(›§Ì
+njavascript:S3776"TRefactor this function to reduce its Cognitive Complexity from 18 to the 15 allowed.(—ì¹ÿ
+Ojavascript:S1854"5Remove this useless assignment to local variable "_b"(á›şŒ
+m!javascript:ExcessiveParameterList"=Function has 9 parameters which is greater than 7 authorized.(ôüÿíøÿÿÿÿ
+Ajavascript:CommentedCode"Remove this commented out code.(ÙÓŸŒ
+cjavascript:S2814"DRename "i" as this name is already used in declaration at line 7063.(Ğ¬Ë¥øÿÿÿÿ
+cjavascript:S3358"DExtract this nested ternary operation into an independent statement.(ëËšŠùÿÿÿÿ
+Djavascript:BitwiseOperators"Remove the use of "|" operator.(Ò¦ò¯
+Ajavascript:CommentedCode"Remove this commented out code.(Êşÿò
+Ijavascript:BitwiseOperators"Remove the use of "&" operator.(â€´Áıÿÿÿÿ
+Fjavascript:CommentedCode"Remove this commented out code.(Òúî•ÿÿÿÿÿ
+Wjavascript:S1854"8Remove this useless assignment to local variable "value"(Æ×åóÿÿÿÿÿ
+[javascript:SwitchWithoutDefault"2Add a "default" clause to this "switch" statement.(˜–»
+yjavascript:S1186"ZAdd a nested comment explaining why this function is empty or complete the implementation.(ıÆ²öûÿÿÿÿ
+[!javascript:UnusedFunctionArgument"0Remove the unused function parameter "inBundle".(”ìÓÆ
+Qjavascript:S1135"2Complete the task associated to this TODO comment.(Á¸ßŠûÿÿÿÿ
+djavascript:S2814"ERename "t1" as this name is already used in declaration at line 8486.(äæ‚üÿÿÿÿ
+ujavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(¾Í¢†üÿÿÿÿ
+pjavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(é·Ú
+Zjavascript:UnusedVariable"7Remove the declaration of the unused 'value0' variable.(×ŠİÛ
+Ojavascript:S1854"5Remove this useless assignment to local variable "_a"(‰úâÂ
+Ajavascript:CommentedCode"Remove this commented out code.(‡ğ±
+ejavascript:S2814"FRename "sx" as this name is already used in declaration at line 10109.(È¤èşÿÿÿÿ
+`javascript:S2814"FRename "len" as this name is already used in declaration at line 2321.(İæÓÊ
+Ijavascript:S1472"*Make those call arguments start on line 51(À˜½¤øÿÿÿÿ
+Ijavascript:BitwiseOperators"Remove the use of "|" operator.(Í±äıÿÿÿÿ
+pjavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(‚ƒô±
+Ajavascript:CommentedCode"Remove this commented out code.(ÄÛ‚î
+Fjavascript:CommentedCode"Remove this commented out code.(ÿÌø®ûÿÿÿÿ
+cjavascript:S2583"DChange this condition so that it does not always evaluate to "true".(°ˆ…÷ùÿÿÿÿ
+ejavascript:S2814"KRename "pathData" as this name is already used in declaration at line 2322.(ÌÎ‘é
+njavascript:S3776"TRefactor this function to reduce its Cognitive Complexity from 81 to the 15 allowed.(£éÀ÷
+sjavascript:S3776"TRefactor this function to reduce its Cognitive Complexity from 19 to the 15 allowed.(€ù×Ìşÿÿÿÿ
+^javascript:S3358"DExtract this nested ternary operation into an independent statement.(› ú©
+Wjavascript:UnusedVariable"4Remove the declaration of the unused 'psi' variable.(ûÔéó
+yjavascript:S1186"ZAdd a nested comment explaining why this function is empty or complete the implementation.(à­’ıÿÿÿÿ
+djavascript:S2814"ERename "i" as this name is already used in declaration at line 10909.(¢ò¨‰şÿÿÿÿ
+njavascript:S3776"TRefactor this function to reduce its Cognitive Complexity from 36 to the 15 allowed.(å…Í¤
+Ljavascript:UnusedVariable"$Remove unused function 'getShallow'.(Ü¢†’ùÿÿÿÿ
+bjavascript:UnusedVariable":Remove the declaration of the unused 'positions' variable.(–Û¿Äøÿÿÿÿ
+njavascript:S3776"TRefactor this function to reduce its Cognitive Complexity from 17 to the 15 allowed.(›§Ì
+ljavascript:S1301"MReplace this "switch" statement with "if" statements to increase readability.(€„àúùÿÿÿÿ
+Ajavascript:CommentedCode"Remove this commented out code.(´€´è
+ojavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(…Ş‚)
+Fjavascript:CommentedCode"Remove this commented out code.(™ıê®ÿÿÿÿÿ
+Jjavascript:BitwiseOperators" Remove the use of "<<" operator.(ïÚì€ûÿÿÿÿ
+[javascript:SwitchWithoutDefault"2Add a "default" clause to this "switch" statement.(µóæê
+njavascript:S3776"TRefactor this function to reduce its Cognitive Complexity from 32 to the 15 allowed.(ñ÷¢’
+Ajavascript:CommentedCode"Remove this commented out code.(âÛ‡å
+djavascript:S2814"ERename "y1" as this name is already used in declaration at line 9218.(–úÒœÿÿÿÿÿ
+[!javascript:UnusedFunctionArgument"+Remove the unused function parameter "ctx".(Şø”Ğıÿÿÿÿ
+Fjavascript:CommentedCode"Remove this commented out code.(äÖö¥úÿÿÿÿ
+m!javascript:ExcessiveParameterList"=Function has 9 parameters which is greater than 7 authorized.(ÒâÇúÿÿÿÿ
+ˆ#javascript:NonEmptyCaseWithoutBreak"VEnd this switch case with an unconditional break, continue, return or throw statement.(®¿“ùıÿÿÿÿ
+pjavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(ş»ù
+njavascript:S3776"TRefactor this function to reduce its Cognitive Complexity from 81 to the 15 allowed.(Òéİ¦
+Ljavascript:S1135"2Complete the task associated to this TODO comment.(Ê˜ìå
+Y!javascript:UnusedFunctionArgument".Remove the unused function parameter "target".(×òÌ’
+javascript:S3757"`Change the expression which uses this operand so that it can't evaluate to "NaN" (Not a Number).(üõ“ˆşÿÿÿÿ
+Z!javascript:UnusedFunctionArgument"/Remove the unused function parameter "exports".(›§Ì
+h!javascript:ExcessiveParameterList"=Function has 8 parameters which is greater than 7 authorized.(í²İÃ
+^javascript:S3358"DExtract this nested ternary operation into an independent statement.(¼ÚŸ¾
+^javascript:S2814"DRename "i" as this name is already used in declaration at line 5177.(À©Üî
+cjavascript:S3358"DExtract this nested ternary operation into an independent statement.(Â„¹¼ûÿÿÿÿ
+^javascript:S1134"DTake the required action to fix the issue indicated by this comment.(÷Ã“
+^javascript:S1134"DTake the required action to fix the issue indicated by this comment.(–ºè¾
+_javascript:S2583"EChange this condition so that it does not always evaluate to "false".(—Àß§
+ujavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(¢Ÿ²”øÿÿÿÿ
+`javascript:SwitchWithoutDefault"2Add a "default" clause to this "switch" statement.(€„àúùÿÿÿÿ
+Ajavascript:CommentedCode"Remove this commented out code.(ÕÑú€
+…javascript:S1488"fImmediately return this expression instead of assigning it to the temporary variable "canvasGradient".(½¤•Æÿÿÿÿÿ
+Qjavascript:S1135"2Complete the task associated to this TODO comment.(ÇúÒüùÿÿÿÿ
+Fjavascript:CommentedCode"Remove this commented out code.(ëŒÏûÿÿÿÿ
+Z!javascript:UnusedFunctionArgument"/Remove the unused function parameter "exports".(›§Ì
+njavascript:S3776"TRefactor this function to reduce its Cognitive Complexity from 23 to the 15 allowed.(Ù™Ü
+Z!javascript:UnusedFunctionArgument"/Remove the unused function parameter "ecModel".(¦ôÛÀ
+Ijavascript:BitwiseOperators"Remove the use of "&" operator.(ªÉóÈøÿÿÿÿ
+Ujavascript:S1854";Remove this useless assignment to local variable "controls"(­•ù
+sjavascript:S3776"TRefactor this function to reduce its Cognitive Complexity from 37 to the 15 allowed.(İ‚«¼øÿÿÿÿ
+tjavascript:S1186"ZAdd a nested comment explaining why this function is empty or complete the implementation.(ÉÛÔÂ
+V!javascript:UnusedFunctionArgument"+Remove the unused function parameter "ctx".(”ìÓÆ
+Z!javascript:UnusedFunctionArgument"/Remove the unused function parameter "exports".(›§Ì
+Jjavascript:BitwiseOperators" Remove the use of ">>" operator.(ªÉóÈøÿÿÿÿ
+^javascript:S2814"DRename "p" as this name is already used in declaration at line 9602.(Î…Ìˆ
+Djavascript:BitwiseOperators"Remove the use of "|" operator.(®–÷ú
+sjavascript:S3776"TRefactor this function to reduce its Cognitive Complexity from 47 to the 15 allowed.(ù©é¿úÿÿÿÿ
+ejavascript:S2814"KRename "pathData" as this name is already used in declaration at line 2322.(ÌÎ‘é
+djavascript:S2814"ERename "t1" as this name is already used in declaration at line 8219.(ò½ßçşÿÿÿÿ
+d(javascript:VariableDeclarationAfterUsage"2Move the declaration of "Entry" before this usage.(ÿäÔÎ
+Ljavascript:S1135"2Complete the task associated to this TODO comment.(’á›
+Ljavascript:S1135"2Complete the task associated to this TODO comment.(“ËĞÕ
+Ljavascript:S1135"2Complete the task associated to this TODO comment.(…ïœ†
+Fjavascript:CommentedCode"Remove this commented out code.(ıÈˆåıÿÿÿÿ
+U!javascript:UnusedFunctionArgument"*Remove the unused function parameter "cb".(×ü˜
+h!javascript:ExcessiveParameterList"=Function has 9 parameters which is greater than 7 authorized.(Ç®·¥
+sjavascript:S3776"TRefactor this function to reduce its Cognitive Complexity from 22 to the 15 allowed.(ˆ‡ì¥ÿÿÿÿÿ
+pjavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(áÃÀÈ
+Ujavascript:S1854"6Remove this useless assignment to local variable "env"(¼‰‹Öüÿÿÿÿ
+sjavascript:S1067"ZReduce the number of conditional operators (7) used in the expression (maximum allowed 3).(Åª…
+^javascript:S1134"DTake the required action to fix the issue indicated by this comment.(’®ŒÒ
+sjavascript:S3776"TRefactor this function to reduce its Cognitive Complexity from 16 to the 15 allowed.(ôüÿíøÿÿÿÿ
+zjavascript:S1067"[Reduce the number of conditional operators (15) used in the expression (maximum allowed 3).(ü—‹»ıÿÿÿÿ
+Fjavascript:CommentedCode"Remove this commented out code.(ˆÕ»Èøÿÿÿÿ
+sjavascript:S3776"TRefactor this function to reduce its Cognitive Complexity from 19 to the 15 allowed.(÷Ş€şÿÿÿÿ
+ajavascript:S2814"GRename "unit" as this name is already used in declaration at line 9020.(¿¸õ‚
+tjavascript:S3758"URe-evaluate the data flow; this operand of a numeric comparison could be "undefined".(ìîˆÙûÿÿÿÿ
+Ajavascript:CommentedCode"Remove this commented out code.(ØËÁÇ
+ujavascript:S1067"[Reduce the number of conditional operators (11) used in the expression (maximum allowed 3).(£ƒ„…
+ujavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(é¨«Ùûÿÿÿÿ
+Qjavascript:S1135"2Complete the task associated to this TODO comment.(è—È“ıÿÿÿÿ
+Fjavascript:CommentedCode"Remove this commented out code.(•«ºèúÿÿÿÿ
+Sjavascript:S1854"4Remove this useless assignment to local variable "m"(š•Âıÿÿÿÿ
+Ljavascript:S1135"2Complete the task associated to this TODO comment.(¶”Ô
+^javascript:S2259"?TypeError can be thrown as "p" might be null or undefined here.(ßÜ¼çûÿÿÿÿ
+Ajavascript:CommentedCode"Remove this commented out code.(ıàîš
+U!javascript:UnusedFunctionArgument"*Remove the unused function parameter "cb".(Ä”€Æ
+Fjavascript:CommentedCode"Remove this commented out code.(¬é“„ıÿÿÿÿ
+cjavascript:S1134"DTake the required action to fix the issue indicated by this comment.(ö ƒÜüÿÿÿÿ
+@javascript:CommentedCode"Remove this commented out code.(üıúw
+Z!javascript:UnusedFunctionArgument"/Remove the unused function parameter "exports".(›§Ì
+Fjavascript:CommentedCode"Remove this commented out code.(›Âßşÿÿÿÿ
+]!javascript:UnusedFunctionArgument"-Remove the unused function parameter "level".(‚–ÖÅÿÿÿÿÿ
+`javascript:SwitchWithoutDefault"2Add a "default" clause to this "switch" statement.(Ï—íàıÿÿÿÿ
+cjavascript:S1134"DTake the required action to fix the issue indicated by this comment.(ååÆÈıÿÿÿÿ
+yjavascript:S1067"ZReduce the number of conditional operators (7) used in the expression (maximum allowed 3).(­É¯Õûÿÿÿÿ
+_javascript:S2814"ERename "iv" as this name is already used in declaration at line 6312.(’á›
+pjavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(îœ»Í
+sjavascript:S3776"TRefactor this function to reduce its Cognitive Complexity from 27 to the 15 allowed.(ÚÁäÔøÿÿÿÿ
+njavascript:S3776"TRefactor this function to reduce its Cognitive Complexity from 33 to the 15 allowed.(í²İÃ
+djavascript:S2814"ERename "t2" as this name is already used in declaration at line 8231.(÷â€³ùÿÿÿÿ
+ujavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(£†Å©ùÿÿÿÿ
+Ljavascript:S1135"2Complete the task associated to this TODO comment.(…ïœ†
+`javascript:SwitchWithoutDefault"2Add a "default" clause to this "switch" statement.(‰â„Ôøÿÿÿÿ
+`javascript:SwitchWithoutDefault"2Add a "default" clause to this "switch" statement.(Ï—íàıÿÿÿÿ
+Z!javascript:UnusedFunctionArgument"/Remove the unused function parameter "exports".(›§Ì
+ujavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(Ï‡¿²şÿÿÿÿ
+Fjavascript:CommentedCode"Remove this commented out code.(ĞÇÿ›ùÿÿÿÿ
+sjavascript:S3776"TRefactor this function to reduce its Cognitive Complexity from 22 to the 15 allowed.(İ‚«¼øÿÿÿÿ
+Ajavascript:CommentedCode"Remove this commented out code.(‰µ×â
+Jjavascript:BitwiseOperators" Remove the use of ">>" operator.(ªÉóÈøÿÿÿÿ
+yjavascript:S1186"ZAdd a nested comment explaining why this function is empty or complete the implementation.(¦«Â¬şÿÿÿÿ
+ojavascript:S3758"URe-evaluate the data flow; this operand of a numeric comparison could be "undefined".(‰‹¦ä
+^javascript:S3358"DExtract this nested ternary operation into an independent statement.(ºíÎ»
+ujavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(Äªıÿÿÿÿ
+Qjavascript:S1135"2Complete the task associated to this TODO comment.(ÉçÿÂşÿÿÿÿ
+Z!javascript:UnusedFunctionArgument"/Remove the unused function parameter "exports".(›§Ì
+djavascript:S2814"ERename "t1" as this name is already used in declaration at line 8301.(äæ‚üÿÿÿÿ
+Djavascript:BitwiseOperators"Remove the use of "&" operator.(·É–¼
+Fjavascript:CommentedCode"Remove this commented out code.(û‹•³ûÿÿÿÿ
+tjavascript:S1186"ZAdd a nested comment explaining why this function is empty or complete the implementation.(”ìÓÆ
+pjavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(¹Ù­–
+^javascript:S3358"DExtract this nested ternary operation into an independent statement.(Á•Üğ
+n!javascript:ExcessiveParameterList">Function has 11 parameters which is greater than 7 authorized.(Ôşëôıÿÿÿÿ
+sjavascript:S3776"TRefactor this function to reduce its Cognitive Complexity from 27 to the 15 allowed.(İ‚«¼øÿÿÿÿ
+Qjavascript:S1135"2Complete the task associated to this TODO comment.(ÃŠÀ“ùÿÿÿÿ
+ujavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(úÁù´ûÿÿÿÿ
+Zjavascript:S1854";Remove this useless assignment to local variable "waveLeft"(‘˜õÒÿÿÿÿÿ
+^javascript:S2814"DRename "i" as this name is already used in declaration at line 5137.(•ı’Õ
+Sjavascript:ForIn"9Restrict what this loop acts on by testing each property.(’éïÁ
+Jjavascript:BitwiseOperators" Remove the use of "<<" operator.(Í±äıÿÿÿÿ
+tjavascript:S1186"ZAdd a nested comment explaining why this function is empty or complete the implementation.(ñ§î
+Ijavascript:BitwiseOperators"Remove the use of "&" operator.(Í±äıÿÿÿÿ
+cjavascript:S1134"DTake the required action to fix the issue indicated by this comment.(¶ˆ®ÿÿÿÿÿ
+ojavascript:S3758"URe-evaluate the data flow; this operand of a numeric comparison could be "undefined".(‰‹¦ä
+^javascript:S3358"DExtract this nested ternary operation into an independent statement.(ÁÅÒÅ
+yjavascript:S1186"ZAdd a nested comment explaining why this function is empty or complete the implementation.(ØÙË—øÿÿÿÿ
+Ajavascript:CommentedCode"Remove this commented out code.(™”¿Ä
+Sjavascript:ForIn"9Restrict what this loop acts on by testing each property.(’éïÁ
+cjavascript:S1134"DTake the required action to fix the issue indicated by this comment.(úü©²øÿÿÿÿ
+fjavascript:S2814"GRename "len" as this name is already used in declaration at line 10993.(Ô´È…ùÿÿÿÿ
+^javascript:S1134"DTake the required action to fix the issue indicated by this comment.(÷Ã“
+mjavascript:S3776"TRefactor this function to reduce its Cognitive Complexity from 16 to the 15 allowed.(«¨Ü)
+Fjavascript:CommentedCode"Remove this commented out code.(¯ØÚ½üÿÿÿÿ
+Zjavascript:UnusedVariable"2Remove the declaration of the unused 'm' variable.(š•Âıÿÿÿÿ
+^javascript:S2814"DRename "i" as this name is already used in declaration at line 7696.(À©Üî
+pjavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(²¹Ç¾
+sjavascript:S3776"TRefactor this function to reduce its Cognitive Complexity from 23 to the 15 allowed.(ÔØõıÿÿÿÿ
+@javascript:CommentedCode"Remove this commented out code.(±µg
+Ajavascript:CommentedCode"Remove this commented out code.(×‡æ
+Ajavascript:CommentedCode"Remove this commented out code.(òı€
+n!javascript:ExcessiveParameterList">Function has 10 parameters which is greater than 7 authorized.(•ç½ıÿÿÿÿÿ
+Z!javascript:UnusedFunctionArgument"/Remove the unused function parameter "exports".(›§Ì
+njavascript:S3776"TRefactor this function to reduce its Cognitive Complexity from 18 to the 15 allowed.(Ïçñú
+njavascript:S3776"TRefactor this function to reduce its Cognitive Complexity from 30 to the 15 allowed.(Ó–€ø
+tjavascript:S1067"ZReduce the number of conditional operators (4) used in the expression (maximum allowed 3).(£òÜÜ
+zjavascript:S3757"`Change the expression which uses this operand so that it can't evaluate to "NaN" (Not a Number).(‰µıÜ
+Qjavascript:S1135"2Complete the task associated to this TODO comment.(ÃŠÀ“ùÿÿÿÿ
+]javascript:S3358"DExtract this nested ternary operation into an independent statement.(šŒÙ!
+Z!javascript:UnusedFunctionArgument"/Remove the unused function parameter "exports".(›§Ì
+_javascript:S2814"ERename "i" as this name is already used in declaration at line 10847.(ì¤¥×
+^javascript:S1134"DTake the required action to fix the issue indicated by this comment.(Ï„œ
+ujavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(úÁù´ûÿÿÿÿ
+njavascript:S3776"TRefactor this function to reduce its Cognitive Complexity from 57 to the 15 allowed.(›§Ì
+cjavascript:S1134"DTake the required action to fix the issue indicated by this comment.(²ı¢Âøÿÿÿÿ
+njavascript:S3776"TRefactor this function to reduce its Cognitive Complexity from 46 to the 15 allowed.(…‚“ƒ
+]"javascript:CollapsibleIfStatements",Merge this if statement with the nested one.(¶ÊŞçûÿÿÿÿ
+@javascript:CommentedCode"Remove this commented out code.(”Ñü8
+Jjavascript:BitwiseOperators" Remove the use of ">>" operator.(Î©È×üÿÿÿÿ
+mjavascript:S3776"TRefactor this function to reduce its Cognitive Complexity from 23 to the 15 allowed.(‡Ïç#
+Fjavascript:CommentedCode"Remove this commented out code.(…İç¾øÿÿÿÿ
+cjavascript:S3358"DExtract this nested ternary operation into an independent statement.(ÕõÖûüÿÿÿÿ
+Rjavascript:S1854"8Remove this useless assignment to local variable "speed"(÷òôÉ
+Ojavascript:S1854"5Remove this useless assignment to local variable "x1"(œŞ„Æ
+^javascript:S1134"DTake the required action to fix the issue indicated by this comment.(÷Ã“
+`javascript:S2814"FRename "sy" as this name is already used in declaration at line 10110.(ÒœšÙ
+tjavascript:S3758"URe-evaluate the data flow; this operand of a numeric comparison could be "undefined".(Æ¸ßşÿÿÿÿ
+ajavascript:S2814"GRename "value" as this name is already used in declaration at line 216.(öâ¥œ
+djavascript:S2814"ERename "d1" as this name is already used in declaration at line 8590.(”ËğŒûÿÿÿÿ
+]javascript:S2814"DRename "i" as this name is already used in declaration at line 5310.(¶ˆ­r
+njavascript:S3776"TRefactor this function to reduce its Cognitive Complexity from 18 to the 15 allowed.(ù¼ı°
+cjavascript:S1134"DTake the required action to fix the issue indicated by this comment.(¿ÁØÔşÿÿÿÿ
+Ljavascript:S1135"2Complete the task associated to this TODO comment.(…ïœ†
+_javascript:S2583"EChange this condition so that it does not always evaluate to "false".(—Àß§
+_javascript:S2814"ERename "t1" as this name is already used in declaration at line 8219.(ğù§í
+cjavascript:S1134"DTake the required action to fix the issue indicated by this comment.(Š‹Öİúÿÿÿÿ
+yjavascript:S1067"ZReduce the number of conditional operators (7) used in the expression (maximum allowed 3).(Ç©õ’ûÿÿÿÿ
+Ajavascript:CommentedCode"Remove this commented out code.(©ÏÕş
+sjavascript:S1186"ZAdd a nested comment explaining why this function is empty or complete the implementation.(Õ€ƒ
+Z!javascript:UnusedFunctionArgument"/Remove the unused function parameter "exports".(›§Ì
+Z!javascript:UnusedFunctionArgument"/Remove the unused function parameter "exports".(›§Ì
+[javascript:S1854"<Remove this useless assignment to local variable "positions"(–Û¿Äøÿÿÿÿ
+Ljavascript:S1135"2Complete the task associated to this TODO comment.(’á›
+^!javascript:UnusedFunctionArgument".Remove the unused function parameter "prevEl".(ØÙË—øÿÿÿÿ
+Ajavascript:CommentedCode"Remove this commented out code.(ÄË¼
+`javascript:S2814"FRename "len" as this name is already used in declaration at line 2321.(İæÓÊ
+Fjavascript:CommentedCode"Remove this commented out code.(ÊÎ•¯ùÿÿÿÿ
+Ujavascript:S3800"6Refactor this function to always return the same type.(Ñ­½Åúÿÿÿÿ
+`javascript:SwitchWithoutDefault"2Add a "default" clause to this "switch" statement.(Ï—íàıÿÿÿÿ
+Ajavascript:CommentedCode"Remove this commented out code.(ÄÂŠ
+Ojavascript:S1854"5Remove this useless assignment to local variable "y1"(«Ôç›
+sjavascript:S3776"TRefactor this function to reduce its Cognitive Complexity from 25 to the 15 allowed.(ó¦÷şÿÿÿÿ
+Ajavascript:CommentedCode"Remove this commented out code.(©¾…È
+sjavascript:S3776"TRefactor this function to reduce its Cognitive Complexity from 32 to the 15 allowed.(ÚÁäÔøÿÿÿÿ
+Ajavascript:CommentedCode"Remove this commented out code.(ÃñÌ‰
+djavascript:S2814"ERename "i" as this name is already used in declaration at line 10993.(Ô´È…ùÿÿÿÿ
+Ajavascript:CommentedCode"Remove this commented out code.(‡ğ±
+i!javascript:ExcessiveParameterList">Function has 11 parameters which is greater than 7 authorized.(æÂúŞ
+ujavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(åğæ½ûÿÿÿÿ
+^javascript:S2583"DChange this condition so that it does not always evaluate to "true".(®ÿğè
+`javascript:SwitchWithoutDefault"2Add a "default" clause to this "switch" statement.(îÇËúÿÿÿÿ
+tjavascript:S3758"URe-evaluate the data flow; this operand of a numeric comparison could be "undefined".(Ñª›ùÿÿÿÿ
+yjavascript:S1186"ZAdd a nested comment explaining why this function is empty or complete the implementation.(£¸Á·ÿÿÿÿÿ
+^javascript:S1134"DTake the required action to fix the issue indicated by this comment.(—»Ä¨
+cjavascript:S3358"DExtract this nested ternary operation into an independent statement.(ˆœ¤œûÿÿÿÿ
+`javascript:S2814"FRename "dir" as this name is already used in declaration at line 9069.(“êß°
+^javascript:S1134"DTake the required action to fix the issue indicated by this comment.(÷Ã“
+Fjavascript:CommentedCode"Remove this commented out code.(ÊÎÓÌúÿÿÿÿ
+^javascript:S2814"DRename "i" as this name is already used in declaration at line 5213.(À©Üî
+cjavascript:S1134"DTake the required action to fix the issue indicated by this comment.(şüôüÿÿÿÿ
+Fjavascript:CommentedCode"Remove this commented out code.(§‚÷Ÿúÿÿÿÿ
+Ljavascript:S1135"2Complete the task associated to this TODO comment.(…ïœ†
+ojavascript:S3758"URe-evaluate the data flow; this operand of a numeric comparison could be "undefined".(Æú†ü
+yjavascript:S1186"ZAdd a nested comment explaining why this function is empty or complete the implementation.(Şø”Ğıÿÿÿÿ
+_javascript:S2814"ERename "x1" as this name is already used in declaration at line 9217.(ÿ£Ç–
+Ijavascript:BitwiseOperators"Remove the use of "|" operator.(ªÉóÈøÿÿÿÿ
+“'javascript:TooManyBreakOrContinueInLoop"]Reduce the total number of "break" and "continue" statements in this loop to use one at most.(ùˆ€Êÿÿÿÿÿ
+^javascript:S2814"DRename "i" as this name is already used in declaration at line 5107.(À©Üî
+`javascript:SwitchWithoutDefault"2Add a "default" clause to this "switch" statement.(‰Ã­ÿÿÿÿÿ
+Ajavascript:CommentedCode"Remove this commented out code.(Üîæİ
+gjavascript:S1301"MReplace this "switch" statement with "if" statements to increase readability.(µóæê
+Ljavascript:S1135"2Complete the task associated to this TODO comment.(“ËĞÕ
+Fjavascript:CommentedCode"Remove this commented out code.(ö›©‰úÿÿÿÿ
+ujavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(ÇÇâûÿÿÿÿ
+^javascript:S1134"DTake the required action to fix the issue indicated by this comment.(ü“¥ñ
+zjavascript:S3757"`Change the expression which uses this operand so that it can't evaluate to "NaN" (Not a Number).(‰µıÜ
+ujavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(¾Í¢†üÿÿÿÿ
+Ajavascript:CommentedCode"Remove this commented out code.(ûüÃ‹
+Fjavascript:CommentedCode"Remove this commented out code.(‘¤‘ûÿÿÿÿ
+j(javascript:VariableDeclarationAfterUsage"8Move the declaration of "textContain" before this usage.(Ø®„
+m!javascript:ExcessiveParameterList"=Function has 9 parameters which is greater than 7 authorized.(¢Ëáüÿÿÿÿ
+Qjavascript:S1135"2Complete the task associated to this TODO comment.(Íøœ±øÿÿÿÿ
+^javascript:S3358"DExtract this nested ternary operation into an independent statement.(› ú©
+ejavascript:S2814"KRename "pathData" as this name is already used in declaration at line 2322.(ÌÎ‘é
+Ljavascript:S1135"2Complete the task associated to this TODO comment.(¶”Ô
+Ajavascript:CommentedCode"Remove this commented out code.(ªüÑË
+Ajavascript:CommentedCode"Remove this commented out code.(ìü¡î
+[!javascript:UnusedFunctionArgument"0Remove the unused function parameter "shapeCfg".(”ìÓÆ
+Z!javascript:UnusedFunctionArgument"/Remove the unused function parameter "exports".(›§Ì
+^javascript:S1134"DTake the required action to fix the issue indicated by this comment.(Ò£Óå
+^javascript:S1134"DTake the required action to fix the issue indicated by this comment.(÷Ã“
+Pjavascript:S1854"6Remove this useless assignment to local variable "psi"(ûÔéó
+Z!javascript:UnusedFunctionArgument"/Remove the unused function parameter "exports".(›§Ì
+Fjavascript:CommentedCode"Remove this commented out code.(ªÔ¤‹ıÿÿÿÿ
+ujavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(èİÛŞşÿÿÿÿ
+|javascript:S1871"bEither merge this case with the identical one on line "9617" or change one of the implementations.(¯×µŠ
+Ljavascript:S1135"2Complete the task associated to this TODO comment.(µáßÅ
+tjavascript:S3758"URe-evaluate the data flow; this operand of a numeric comparison could be "undefined".(Æ¸ßşÿÿÿÿ
+`javascript:SwitchWithoutDefault"2Add a "default" clause to this "switch" statement.(Ï—íàıÿÿÿÿ
+cjavascript:S1134"DTake the required action to fix the issue indicated by this comment.(’‡Ãøÿÿÿÿ
+tjavascript:S1186"ZAdd a nested comment explaining why this function is empty or complete the implementation.(Ä”€Æ
+Fjavascript:CommentedCode"Remove this commented out code.(³÷øæıÿÿÿÿ
+yjavascript:S1067"ZReduce the number of conditional operators (5) used in the expression (maximum allowed 3).(÷××§úÿÿÿÿ
+^javascript:S2814"DRename "k" as this name is already used in declaration at line 6651.(’éïÁ
+cjavascript:S2583"DChange this condition so that it does not always evaluate to "true".(±æ¢Ğúÿÿÿÿ
+Ajavascript:CommentedCode"Remove this commented out code.(’„Ìé
+njavascript:S3776"TRefactor this function to reduce its Cognitive Complexity from 20 to the 15 allowed.(Úä“´
+Qjavascript:S1135"2Complete the task associated to this TODO comment.(Ù¦€Ñûÿÿÿÿ
+Fjavascript:CommentedCode"Remove this commented out code.(µ¹íûÿÿÿÿ
+Ijavascript:S930"0"clone" expects 1 argument, but 2 were provided.(ö¼€ü
+;javascript:S1116"Remove this empty statement.(Åñ­õşÿÿÿÿ
+k(javascript:VariableDeclarationAfterUsage"9Move the declaration of "guessOrdinal" before this usage.(ƒ‚¼š
+njavascript:S3776"TRefactor this function to reduce its Cognitive Complexity from 18 to the 15 allowed.(Ö±ˆ•
+Ajavascript:CommentedCode"Remove this commented out code.(°µ¢
+Ajavascript:CommentedCode"Remove this commented out code.(¸ßãÃ
+€javascript:S1488"fImmediately return this expression instead of assigning it to the temporary variable "canvasGradient".(ĞÓ¡ó
+Qjavascript:S1135"2Complete the task associated to this TODO comment.(£¯¸êüÿÿÿÿ
+Pjavascript:S1854"6Remove this useless assignment to local variable "psi"(ûÔéó
+sjavascript:S3776"TRefactor this function to reduce its Cognitive Complexity from 19 to the 15 allowed.(ï—áêøÿÿÿÿ
+Fjavascript:CommentedCode"Remove this commented out code.(ö¨Ãòüÿÿÿÿ
+Fjavascript:CommentedCode"Remove this commented out code.(‚ÚÌãúÿÿÿÿ
+Fjavascript:CommentedCode"Remove this commented out code.(ÈÓå¾úÿÿÿÿ
+pjavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(Ûæò
+njavascript:S3776"TRefactor this function to reduce its Cognitive Complexity from 19 to the 15 allowed.(Êçò¼

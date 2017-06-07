@@ -1,0 +1,4 @@
+
+psquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(íÉò–
+psquid:UselessImportCheck"BRemove this unused import 'com.tangjing.util.SpringContextHolder'.(ƒÒ²îúÿÿÿÿ8Ä¼¼‹È+
+hsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(íÉò–

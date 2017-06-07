@@ -1,0 +1,182 @@
+<!doctype html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <title>layui</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" th:href="${#httpServletRequest.getContextPath()}+'/assets/layui/css/layui.css'" media="all">
+    <script th:src="${#httpServletRequest.getContextPath()}+'/assets/jquery/jquery-1.12.4.js'"></script>
+    <script th:src="${#httpServletRequest.getContextPath()}+'/assets/layui/layui.js'" charset="utf-8"></script>
+    <script th:src="${#httpServletRequest.getContextPath()}+'/assets/layui/js/common.js'" charset="utf-8"></script>
+    <link th:href="${#httpServletRequest.getContextPath()}+'/assets/coustom/css/fort.css'" rel="stylesheet">
+    <script th:src="${#httpServletRequest.getContextPath()}+'/assets/coustom/js/fort.js'" charset="utf-8"></script>
+</head>
+<body>
+<form class="layui-form layui-form-pane form" style="margin-top: 20px;margin-right: 20px;margin-left: 20px">
+    <!--表单填写进度条开始-->
+    <div class="top">
+        <div class="colors">
+        </div>
+    </div>
+    <!--表单填写进度条结束-->
+    <div id="formView">
+        <div class="layui-form-item">
+            <label class="layui-form-label ">表名</label>
+            <div class="layui-input-inline" style="width: 120px">
+                <input placeholder="请输入表名..." autocomplete="off" lay-verify="required"   class="layui-input" name="tableName">
+            </div>
+            <label class="layui-form-label ">表描述</label>
+            <div class="layui-input-inline" style="width: 150px">
+                <input placeholder="请输入表描述..." autocomplete="off" lay-verify="required" class="layui-input"
+                       name="tableComment">
+            </div>
+            <div class="layui-input-inline">
+                <button class="layui-btn " th:inline="text" onclick="addLine()">新增表字段</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="layui-form-item ">
+        <div class="layui-form-item">
+            <label class="layui-form-label layui-input-inline" style="width: 100px" id="setIndex"></label>
+            <!--<label class="layui-form-label ">字段名</label>-->
+            <div class="layui-input-inline" style="width: 120px">
+                <input placeholder="请输入字段名..." autocomplete="off" lay-verify="required" class="layui-input" name="rowList[0].rowName"/>
+            </div>
+            <!--<label class="layui-form-label ">字段描述</label>-->
+            <div class="layui-input-inline" style="width: 120px">
+                <input placeholder="请输入字段描述..." autocomplete="off" lay-verify="required" class="layui-input" name="rowList[0].rowDesc"/>
+            </div>
+            <!--<label class="layui-form-label ">字段类型</label>-->
+            <div class="layui-input-inline" style="width: 120px">
+                <select lay-filter="" name="rowList[0].rowType"/>
+                    <option value="" th:text="请选择类型..." selected></option>
+                    <option th:each="node : ${DataTypes}" th:value="${node.value}" th:text="${node.value}"></option>
+                </select>
+            </div>
+            <!--<label class="layui-form-label ">字段长度</label>-->
+            <div class="layui-input-inline" style="width: 120px">
+                <input placeholder="请输入字段长度..." autocomplete="off" lay-verify="required" class="layui-input" name="rowList[0].rowLength"/>
+            </div>
+
+            <div class="layui-input-inline" style="width: 80px">
+                <input type="checkbox" value="true" title="主键"  name="rowList[0].rowKey"/>
+            </div>
+            <div class="layui-input-inline" style="width: 60px">
+                <input type="checkbox" value="true" title="可空"  name="rowList[0].rowNull"/>
+            </div>
+
+        </div>
+    </div>
+    <div class="layui-form-item ">
+        <div class="layui-input-inline">
+            <button class="layui-btn layedit-tool-right" lay-submit="" lay-filter="demo1">提交</button>
+        </div>
+    </div>
+</form>
+<script id="templete" type="text/html">
+
+    <div class="layui-form-item">
+        <label class="layui-form-label layui-input-inline" style="width: 100px">字段{{ d.index}}</label>
+        <!--<label class="layui-form-label">字段名</label> -->
+        <div class="layui-input-inline" style="width: 120px">
+            <input placeholder="请输入字段名..." autocomplete="off" lay-verify="required" class="layui-input" name="rowList[{{ d.index-1}}].rowName"/>
+        </div>
+        <!--<label class="layui-form-label ">字段描述</label>-->
+        <div class="layui-input-inline" style="width: 120px">
+            <input placeholder="请输入字段名..." autocomplete="off" lay-verify="required" class="layui-input" name="rowList[{{ d.index-1}}].rowDesc"/>
+        </div>
+        <!--<label class="layui-form-label">字段类型</label>-->
+        <div class="layui-input-inline" style="width: 120px">
+            <select lay-filter="" name="rowList[{{ d.index-1}}].rowType"/>
+                <option value="" selected>请选择类型...</option>
+                {{# layui.each(d.dataObject, function(index, item){ }}
+                <option value="{{ item.value}}">{{ item.value}}</option>
+                {{# }); }}
+            </select>
+        </div>
+        <!--<label class="layui-form-label">字段长度</label>-->
+        <div class="layui-input-inline" style="width: 120px">
+            <input placeholder="请输入字段长度..." autocomplete="off" lay-verify="required" class="layui-input" name="rowList[{{ d.index-1}}].rowLength"/>
+        </div>
+        <div class="layui-input-inline" style="width: 80px">
+            <input type="checkbox" value="true" title="主键" name="rowList[{{ d.index-1}}].rowKey"/>
+        </div>
+        <div class="layui-input-inline" style="width: 60px">
+            <input type="checkbox" value="true" title="可空" name="rowList[{{ d.index-1}}].rowNull"/>
+        </div>
+    </div>
+</script>
+
+<script th:inline="javascript">
+    var i=1;
+    solid();
+    layui.use(['form', 'layedit', 'laydate', 'laytpl'], function () {
+        var form = layui.form()
+            , laytpl = layui.laytpl
+            , layer = layui.layer
+            , layedit = layui.layedit
+            , laydate = layui.laydate;
+
+        //创建一个编辑器
+        var editIndex = layedit.build('LAY_demo_editor');
+
+        $("#setIndex").text("字段"+eval(i));
+
+        //自定义验证规则
+        form.verify({
+            pass: [/(.+){6,12}$/, '密码必须6到12位'],
+            pass1: function (value) {
+                if ($("#password1").val() != $("#password2").val()) {
+                    return '2次密码输入不一致';
+                }
+            },
+        });
+
+        //监听提交
+        form.on('submit(demo1)', function (data) {
+            if (JSON.stringify(data.field)) {
+                var data = $("form").serialize();
+                $.axspost("add.json", data, function (e) {
+                    if (e.success) {
+                        var index = parent.layer.getFrameIndex(window.name);
+                        parent.layer.close(index);
+                        window.parent.query();
+                        window.parent.layer.msg(e.msg);
+                    }
+                    if (!e.success) {
+                        layer.msg(e.msg);
+                        //init();
+                    }
+                }, function (e) {
+                    layer.alert(e.msg);
+                });
+            }
+
+            return false;
+        });
+
+        window.addLine = function () {
+            var map={};
+            ++i;
+            var dataObject = [[${DataTypes}]];
+            map.index=i;
+            map.dataObject=dataObject;
+//            console.log(dataObject);
+            var gettpl = document.getElementById('templete').innerHTML;
+            laytpl(gettpl).render(map, function (html) {
+                document.getElementById('formView').outerHTML += html;
+                form.render("select");
+                form.render("checkbox");
+
+            });
+            solid();
+        }
+    });
+
+
+</script>
+</body>
+</html>

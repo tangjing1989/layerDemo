@@ -1,0 +1,257 @@
+
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(Õ÷õúÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(òÉÍ¾şÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(çƒ´ûÿÿÿÿ
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(±·ƒğ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(üø†‰ıÿÿÿÿ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¸”Š“ıÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(œ¶’¡ÿÿÿÿÿ
+Nsquid:S1854"9Remove this useless assignment to local variable "props".(›®ÙÜ
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(²ÉáÂ
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(ğ°å²
+Psquid:S1854";Remove this useless assignment to local variable "cpuList".(¹´ÎÍ
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(ÂØ¦Î
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(Õ÷õúÿÿÿÿ
+Esquid:S1481"+Remove this unused "sumMhz" local variable.(›™ìüùÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(‹ª´Ùşÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(¬øêôÿÿÿÿÿ
+csquid:S1871"IThis case's code block is the same as the block for the case on line 288.(‡âÆñşÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(¶Íİıÿÿÿÿ
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(šÉœ×
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(Õ÷õúÿÿÿÿ
+Msquid:S1197"8Move the array designator from the variable to the type.(¹´ÎÍ
+Ssquid:S1854"9Remove this useless assignment to local variable "usage".(¹Ì©£øÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(Ó“«ÿÿÿÿÿ
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(½Ã—ù
+:squid:S1166"%Either log or rethrow this exception.(”ı¾
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(Î‹¶
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÕÄÙŠ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(¾ˆ¼½üÿÿÿÿ
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(Ô´á
+N
+squid:S106";Replace this usage of System.out or System.err by a logger.(ü‡ãD
+qsquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»”å­ıÿÿÿÿ
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(ª†ıæ
+csquid:S1871"IThis case's code block is the same as the block for the case on line 288.(®ÊÿÜûÿÿÿÿ
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(„¯‹
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(×µ»
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(Äø†ëşÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(Õ÷õúÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(‘øç ÿÿÿÿÿ
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(²Œåù
+qsquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿà¶Ğúÿÿÿÿ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ßÕÙÏûÿÿÿÿ
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(¥ôÜ
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(â¿å½
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(¾ï´
+Msquid:S1197"8Move the array designator from the variable to the type.(¦ƒß
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(›ğÇÑ
+N
+squid:S106";Replace this usage of System.out or System.err by a logger.(‘ $
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(ÅÃÎÏ
+^squid:S1871"IThis case's code block is the same as the block for the case on line 288.(Áì¾ì
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(Å‡»‡
+Msquid:S1854"8Remove this useless assignment to local variable "info".(ü¯ã 
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.( ÊÎ“
+Tsquid:S1118":Add a private constructor to hide the implicit public one.(ÆªÉ…ıÿÿÿÿ
+Msquid:S1197"8Move the array designator from the variable to the type.(¦ƒß
+Rsquid:S1197"8Move the array designator from the variable to the type.(°¶´Öøÿÿÿÿ
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(§ñ·Ü
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(«Â¸Áûÿÿÿÿ
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(ç’±Ô
+\squid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(“¶İ
+Nsquid:S1854"9Remove this useless assignment to local variable "sigar".(Œâùã
+M"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(°ë£}
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(û‘‹šùÿÿÿÿ
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(¦‹¸ù
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(éÉë­
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(Å´Ûæøÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(Õ÷õúÿÿÿÿ
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(Üéı
+Msquid:S1197"8Move the array designator from the variable to the type.(¹´ÎÍ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ó–ÙÛûÿÿÿÿ
+Tsquid:S1854":Remove this useless assignment to local variable "sumMhz".(›™ìüùÿÿÿÿ
+Vsquid:S3518"AMake sure 'sumDiskSize' can't be zero before doing this division.(¡ºÚŒ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(‰Ù—ùÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(òì›€ùÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(ÒÜ¢Ìùÿÿÿÿ
+>squid:S1481")Remove this unused "info" local variable.(ü¯ã 
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(Òÿ×’øÿÿÿÿ
+msquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(Í¼ç•
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(ıÙºÒúÿÿÿÿ
+Ssquid:S1854"9Remove this useless assignment to local variable "usage".(¹Ì©£øÿÿÿÿ
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ã‡†É
+N
+squid:S106";Replace this usage of System.out or System.err by a logger.(­Œ-
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(óÆ³
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(±´öÆüÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(ËóÛûûÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(ÃöÚ‡ùÿÿÿÿ
+N
+squid:S106";Replace this usage of System.out or System.err by a logger.(¬ã
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(®£Ìñ
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(ƒÇÂ‡
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(¯ÜË
+Lsquid:S1197"8Move the array designator from the variable to the type.(š¢™ 
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(ÁòÖŸÿÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(¬à¾­ÿÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(¯¾ïÖùÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(ˆšû­ùÿÿÿÿ
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(”ÀÙò
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(‡õªÒ
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(Úêµ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(±éôüÿÿÿÿ
+:squid:S1166"%Either log or rethrow this exception.(°òÒ¬
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(âé” 
+\squid:S00112"FDefine and throw a dedicated exception instead of using a generic one.( ¡½“
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(÷Ã›‹ùÿÿÿÿ
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(ÍØÃË
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(çÔë¶
+csquid:S1871"IThis case's code block is the same as the block for the case on line 288.(êà´Äøÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(Õ÷õúÿÿÿÿ
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(ØÄ–ê
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¨êÿÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(İ¹Ş¹úÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(Áô°ªÿÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(æåÛşÿÿÿÿ
+Msquid:S1197"8Move the array designator from the variable to the type.(Ú‘ùÒ
+_squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(‡ˆ”t
+_squid:S1301"KReplace this "switch" statement by "if" statements to increase readability.(°ë£}
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(‡ÕŒÏùÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(÷ŞÃ÷ùÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(†„³±ÿÿÿÿÿ
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(«ìª‡
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(şÆŒ½ûÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(ÉşºÃıÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(çéåÿÿÿÿÿ
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(‘„¨
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(ŒŸ®ˆ
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(öÎÎ½
+}squid:S1192"cDefine a constant instead of duplicating this literal "----------------------------------" 8 times.(Õ÷õúÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(¼ ûÿÿÿÿ
+Msquid:S1197"8Move the array designator from the variable to the type.(Ú‘ùÒ
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(ÉùÙ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(’±½„úÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(Õ÷õúÿÿÿÿ
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(¬Ëì°
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(œ¥£
+Ssquid:S1854">Remove this useless assignment to local variable "usePercent".(¼š™‘
+Psquid:S1854";Remove this useless assignment to local variable "cpuList".(¹´ÎÍ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(Õ÷õúÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(ÛâÀñşÿÿÿÿ
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(Ü‘«
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(ÚŒÿİ
+M"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(°ë£}
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(û¦ÉÕ
+=squid:S1148"#Use a logger to log this exception.(Âşÿâûÿÿÿÿ
+N
+squid:S106";Replace this usage of System.out or System.err by a logger.(úº¦*
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(ÌüÏšûÿÿÿÿ
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.( éÓü
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(âù²«ıÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(Î´œÖûÿÿÿÿ
+?squid:S1481"*Remove this unused "props" local variable.(›®ÙÜ
+ƒsquid:S1151"iReduce this switch case number of lines from 7 to at most 5, for example by extracting code into methods.(ßš¸úıÿÿÿÿ
+^squid:S1871"IThis case's code block is the same as the block for the case on line 288.(äò§˜
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(Òƒ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(÷©Úúÿÿÿÿ
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(ìİ®ªıÿÿÿÿ

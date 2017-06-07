@@ -1,0 +1,17 @@
+
+Fjavascript:CommentedCode"Remove this commented out code.(Êøøûÿÿÿÿ
+zjavascript:S2703"[Add the "let", "const" or "var" keyword to this declaration of "j_dot" to make it explicit.(÷Å‹Õûÿÿÿÿ
+njavascript:S3776"TRefactor this function to reduce its Cognitive Complexity from 36 to the 15 allowed.(ë›Ã
+ujavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(ÂéÁ­üÿÿÿÿ
+Fjavascript:CommentedCode"Remove this commented out code.(´ïÿ“ûÿÿÿÿ
+Y!javascript:UnusedFunctionArgument")Remove the unused function parameter "e".(äÉ—“øÿÿÿÿ
+X"javascript:CollapsibleIfStatements",Merge this if statement with the nested one.(úÿÆä
+ujavascript:S2703"[Add the "let", "const" or "var" keyword to this declaration of "i_dot" to make it explicit.(Ç¡—¿
+Ajavascript:CommentedCode"Remove this commented out code.(ıï’ã
+8javascript:S2228"Remove this logging statement.(Ì»âÂ
+Njavascript:S1656"/Remove or correct this useless self-assignment.(Îó•îüÿÿÿÿ
+Ajavascript:CommentedCode"Remove this commented out code.(™‚¹ª
+Fjavascript:CommentedCode"Remove this commented out code.(¿Ú€’øÿÿÿÿ
+vjavascript:S2703"WAdd the "let", "const" or "var" keyword to this declaration of "i" to make it explicit.(Úï¿‰üÿÿÿÿ
+Ijavascript:S1656"/Remove or correct this useless self-assignment.(ºÆ‰
+vjavascript:S2703"WAdd the "let", "const" or "var" keyword to this declaration of "j" to make it explicit.(›Šêşÿÿÿÿ

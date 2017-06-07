@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <!--应用启动时主动加载的一些类-->
+
+    <!--通过Spring应用上下文获取实例-->
+    <bean class="com.tangjing.util.SpringContextHolder"/>
+    <!--配置文件加载-->
+    <bean class="com.tangjing.util.config.ConfigServiceImpl">
+        <property name="resourceName" value="app"/>
+    </bean>
+    <bean class="com.tangjing.util.SpringContextService" init-method="init"/>
+
+
+
+    <!--<bean id="captchaProducer" class="com.google.code.kaptcha.impl.DefaultKaptcha">-->
+    <!--<property name="config">-->
+    <!--<bean class="com.google.code.kaptcha.util.Config">-->
+    <!--<constructor-arg>-->
+    <!--<props>-->
+    <!--&lt;!&ndash;<prop key="kaptcha.border">yes</prop>&ndash;&gt;-->
+    <!--&lt;!&ndash;<prop key="kaptcha.border.color">105,179,90</prop>&ndash;&gt;-->
+    <!--<prop key="kaptcha.image.width">80</prop>-->
+    <!--<prop key="kaptcha.image.height">30</prop>-->
+    <!--<prop key="kaptcha.session.key">code</prop>-->
+    <!--<prop key="kaptcha.textproducer.font.color">blue</prop>-->
+    <!--<prop key="kaptcha.textproducer.font.size">25</prop>-->
+    <!--<prop key="kaptcha.textproducer.char.space">3</prop>-->
+    <!--<prop key="kaptcha.noise.impl">com.google.code.kaptcha.impl.NoNoise</prop>-->
+    <!--<prop key="kaptcha.textproducer.char.length">4</prop>-->
+    <!--<prop key="kaptcha.obscurificator.impl">com.google.code.kaptcha.impl.ShadowGimpy</prop>-->
+    <!--&lt;!&ndash; 配置中文 <prop key="kaptcha.textproducer.impl">com.google.code.kaptcha.text.impl.ChineseTextProducer</prop> &ndash;&gt;-->
+    <!--<prop key="kaptcha.textproducer.font.names">彩云,宋体,楷体,微软雅黑</prop>-->
+
+    <!--</props>-->
+    <!--</constructor-arg>-->
+    <!--</bean>-->
+    <!--</property>-->
+    <!--</bean>-->
+
+    <!--kaptcha.border  是否有边框  默认为true  我们可以自己设置yes，no-->
+    <!--kaptcha.border.color   边框颜色   默认为Color.BLACK-->
+    <!--kaptcha.border.thickness  边框粗细度  默认为1-->
+    <!--kaptcha.producer.impl   验证码生成器  默认为DefaultKaptcha-->
+    <!--kaptcha.textproducer.impl   验证码文本生成器  默认为DefaultTextCreator-->
+    <!--kaptcha.textproducer.char.string   验证码文本字符内容范围  默认为abcde2345678gfynmnpwx-->
+    <!--kaptcha.textproducer.char.length   验证码文本字符长度  默认为5-->
+    <!--kaptcha.textproducer.font.names    验证码文本字体样式  默认为new Font("Arial", 1, fontSize), new Font("Courier", 1, fontSize)-->
+    <!--kaptcha.textproducer.font.size   验证码文本字符大小  默认为40-->
+    <!--kaptcha.textproducer.font.color  验证码文本字符颜色  默认为Color.BLACK-->
+    <!--kaptcha.textproducer.char.space  验证码文本字符间距  默认为2-->
+    <!--kaptcha.noise.impl    验证码噪点生成对象  默认为DefaultNoise-->
+    <!--kaptcha.noise.color   验证码噪点颜色   默认为Color.BLACK-->
+    <!--kaptcha.obscurificator.impl   验证码样式引擎  默认为WaterRipple-->
+    <!--kaptcha.word.impl   验证码文本字符渲染   默认为DefaultWordRenderer-->
+    <!--kaptcha.background.impl   验证码背景生成器   默认为DefaultBackground-->
+    <!--kaptcha.background.clear.from   验证码背景颜色渐进   默认为Color.LIGHT_GRAY-->
+    <!--kaptcha.background.clear.to   验证码背景颜色渐进   默认为Color.WHITE-->
+    <!--kaptcha.image.width   验证码图片宽度  默认为200-->
+    <!--kaptcha.image.height  验证码图片高度  默认为50-->
+
+</beans>

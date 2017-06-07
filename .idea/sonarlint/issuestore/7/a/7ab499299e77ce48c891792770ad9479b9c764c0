@@ -1,0 +1,20 @@
+
+qsquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„òØ¦ÿÿÿÿÿ
+"squid:ClassVariableVisibilityCheck"UMake constants a static final constant or non-public and provide accessors if needed.(ğ¾Ö³
+Osquid:S1118":Add a private constructor to hide the implicit public one.(÷ø±¤
+Esquid:S1168"+Return an empty collection instead of null.(¾¥¹øÿÿÿÿ
+osquid:S00122"TAt most one statement is allowed per line, but 2 statements were found on this line.(¾¥¹øÿÿÿÿ
+[squid:S1192"FDefine a constant instead of duplicating this literal "value" 4 times.(¢¾ıÛ
+osquid:S00122"TAt most one statement is allowed per line, but 2 statements were found on this line.(ïÈŠüıÿÿÿÿ
+\squid:S1192"GDefine a constant instead of duplicating this literal "values" 3 times.(ƒôã½
+Dsquid:S1444"/Make this "public static constants" field final(ğ¾Ö³
+2squid:S2386"Make this member "protected".(ğ¾Ö³
+osquid:S00122"TAt most one statement is allowed per line, but 2 statements were found on this line.(‘ê–ãıÿÿÿÿ
+osquid:S00122"TAt most one statement is allowed per line, but 2 statements were found on this line.(§¶¤óøÿÿÿÿ
+isquid:S00122"TAt most one statement is allowed per line, but 2 statements were found on this line.(®ªœ9
+Qsquid:S2259"<NullPointerException might be thrown as 'm' is nullable here(Œ‚Òø
+qsquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚á§ùûÿÿÿÿ
+Osquid:S1854"5Remove this useless assignment to local variable "m".(—«Ñçûÿÿÿÿ
+osquid:S00122"TAt most one statement is allowed per line, but 2 statements were found on this line.(¾¥¹øÿÿÿÿ
+nsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(¡Î Ù
+osquid:S00122"TAt most one statement is allowed per line, but 2 statements were found on this line.(×áÖÅıÿÿÿÿ

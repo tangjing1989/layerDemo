@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<meta charset="utf-8">
+<title>在线演示 - layui</title>
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no">
+<script src="assets/jquery/jquery-1.12.4.js"></script>
+<!--<link rel="stylesheet" th:href="${#httpServletRequest.getContextPath()}+'/assets/hui/css/iconfont.min.css'" charset="utf-8">-->
+<!--<link rel="stylesheet" th:href="${#httpServletRequest.getContextPath()}+'/assets/hui/css/H-ui.min.css'" charset="utf-8">-->
+<link rel="stylesheet" href="assets/layui/css/layui.css" media="all">
+<link rel="stylesheet" href="assets/layui/css/global.css" media="all">
+<style type=text/css>
+    ::-webkit-scrollbar {
+        width: 0px;
+        height: 0px;
+    }
+
+    ::-webkit-scrollbar-corner, ::-webkit-scrollbar-track {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    ::-webkit-scrollbar-corner, ::-webkit-scrollbar-track {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 0;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    ::-webkit-scrollbar-corner, ::-webkit-scrollbar-track {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    ::-webkit-scrollbar-corner, ::-webkit-scrollbar-track {
+        background-color: rgba(0, 0, 0, 0);
+    }
+</style>
+<style type="text/css">
+    .layui-nav-tree .layui-nav-child a:hover {
+        color: #fff;
+        background: #4E5465;
+    }
+
+    /*sidebar mini*/
+
+    .layui-layout-admin .sidebar-mini {
+        width: 70px;
+    }
+
+    .layui-layout-admin .sidebar-mini .layui-side-scroll {
+        width: 100px;
+    }
+
+    .layui-layout-admin .sidebar-mini #sidebar {
+        width: 70px;
+    }
+
+    .layui-layout-admin .sidebar-mini .layui-nav-tree {
+        width: 70px;
+    }
+
+    .layui-layout-admin .sidebar-mini .layui-nav .layui-nav-item a {
+        padding: 0 15px;
+    }
+
+    .layui-layout-admin .sidebar-mini .layui-nav-item a cite {
+        display: none;
+    }
+
+    #sidebar {
+        height: 40px;
+        width: 200px;
+        background: #4A5064;
+        text-align: center;
+        line-height: 40px !important;
+        font-size: 18px;
+        user-select: none;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+    }
+
+    @font-face {
+        font-family: 'iconfont';
+        /* project id 58108 */
+        src: url('//at.alicdn.com/t/font_4ol5mtrz7qoajor.eot');
+        src: url('//at.alicdn.com/t/font_4ol5mtrz7qoajor.eot?#iefix') format('embedded-opentype'),
+        url('//at.alicdn.com/t/font_4ol5mtrz7qoajor.woff') format('woff'),
+        url('//at.alicdn.com/t/font_4ol5mtrz7qoajor.ttf') format('truetype'),
+        url('//at.alicdn.com/t/font_4ol5mtrz7qoajor.svg#iconfont') format('svg');
+    }
+</style>
+<style>
+    #sidebar-side .layui-nav i {
+        font-size: 16px;
+        width: 20px;
+    }
+
+    #sidebar-side .layui-nav cite {
+        font-size: 13px;
+    }
+
+    .admin-nav-tree .layui-nav-child dd a i {
+        max-width: 28px;
+        width: auto;
+    }
+
+    #sidebar-side .layui-nav-item a {
+        padding: 0 10px;
+    }
+
+    #sidebar-side .admin-nav-tree .layui-nav-child dd a {
+        padding-left: 35px;
+    }
+
+    .sidebar-mini .layui-nav-child dd a {
+        padding-left: 22px !important;
+    }
+
+    .layui-nav-tree .layui-nav-item {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    #sidebar {
+        color: #fff
+    }
+</style>
+
+</head>
+<body th:background="${#httpServletRequest.getContextPath()}+'/assets/coustom/img/blur-bg.jpg'">
+<div class="layui-layout layui-layout-admin">
+    <div class="layui-header header ">
+        <div class="layui-main">
+            <font class="logo" color="aqua" size="5"></font>
+            <ul class="layui-nav clearfix" id="menu" lay-filter="main-menu" style="top:22px ;left: 160px;float: left;cursor:pointer" >
+                <i class="layui-icon1" onclick="onchangeMenu()" style="font-size: 20px; color: white">&#xe70f;</i>
+            </ul>
+
+            <ul class="layui-nav" pc>
+                <li class="layui-nav-item" pc>
+                    <a href="javascript:;" th:text="${user.userName}"></a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="http://layim.layui.com/" target="_blank">修改密码</a></dd>
+                        <!--<dd><a href="javascript:;" onclick="layer.tips('尚未推出', this, {tips: [4, '#009688']});">后台模版</a></dd>-->
+                    </dl>
+                </li>
+                <li class="layui-nav-item " pc>
+                    <a id="Fullscreen">进入全屏</a>
+                </li>
+                <li class="layui-nav-item " pc>
+                    <a href="/doc/">切换账户</a>
+                </li>
+                <li class="layui-nav-item" pc>
+                    <a href="/demo/logout.htm">登出</a>
+                </li>
+                <li class="layui-nav-item" mobile>
+                    <a href="javascript:;" th:text="${user.userName}"></a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="" target="_blank">修改密码</a></dd>
+                        <dd><a href="" target="_blank">切换账户</a></dd>
+                        <dd><a href="" target="_blank">登出</a></dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="layui-side layui-bg-black" id="menuId1">
+        <div class="layui-side-scroll">
+            <ul class="layui-nav layui-nav-tree site-demo-nav">
+                <li class="layui-nav-item" th:each="menu1:${menu1s}">
+                    <a class="javascript:;" th:onclick="'javascript:loadPage(this);'" th:value="${menu1.menuHref}" th:name="|${menu1.menuName}|" href="javascript:;">
+                        <i class="layui-icon1" style="font-size: 25px; color: white" th:utext="${menu1.imgText}"></i>
+                        <i th:text="${menu1.menuName}"/>
+                    </a>
+                    <dl class="layui-nav-child" th:if="${menu1.nodes != null and #lists.size(menu1.nodes)>0}">
+                        <dd th:each="node : ${menu1.nodes}">
+                            <a class="javascript:;" th:onclick="'javascript:loadPage(this);'" th:value="${node.menuHref}" th:name="|${node.menuName}|" href="javascript:;">
+                                <i class="layui-icon1" style="font-size: 25px; color: white" th:utext="${node.imgText}"></i>
+                                <span th:text="${node.menuName}"/>
+                            </a>
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="layui-side layui-bg-black" id="menuId2" style="display: none;width: 75px">
+        <div class="layui-side-scroll">
+            <ul class="layui-nav layui-nav-tree site-demo-nav" style="width: 75px">
+                <li class="layui-nav-item" th:each="menu1:${menu1s}">
+                    <a  th:onclick="'javascript:loadPage(this);'" th:value="${menu1.menuHref}" th:name="|${menu1.menuName}|" href="javascript:;" onmouseover="showTips(this)">
+                        <i class="layui-icon1" style="font-size: 25px; color: white" th:utext="${menu1.imgText}"></i>
+                    </a>
+                    <dl class="layui-nav-child" th:if="${menu1.nodes != null and #lists.size(menu1.nodes)>0}">
+                        <dd  th:each="node : ${menu1.nodes}"><a  th:onclick="'javascript:loadPage(this);'" th:value="${node.menuHref}" th:name="|${node.menuName}|" href="javascript:;" onmouseover="showTips(this)">
+                                <i class="layui-icon1" style="font-size: 14px; color: white; margin-left: 5px" th:utext="${node.imgText}"></i>
+                            </a>
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="layui-tab layui-tab-brief breviary">
+        <ul class="layui-tab-title site-demo-title " style="background-color: #263e59;margin-top: -5px;" id="breviary1">
+            <li id="stile1" class="nav-icon sidebar-trans  layui-icon"
+                style="font-size: 15px; color: #1E9FFF;">&#xe60c;Dashboard
+            </li>
+            <li id="stile2" class="nav-icon sidebar-trans "></li>
+        </ul>
+        <div class="layui-body layui-tab-content site-demo admin-body" style="top: 105px;" id="breviary2">
+            <iframe id="iframepage" onload="reinitIframe()"
+                    frameborder="0"
+                    scrolling="no"
+                    allowTransparency="true"
+                    style="margin-left: 20px;margin-right: 0px;margin-top: 15px;background-color: rgba(0,0,0,0);"
+                    src="index.htm"
+                    width="98%"
+            ></iframe>
+        </div>
+    </div>
+
+    <div class="layui-footer footer footer-demo " id="breviary3">
+        <div class="layui-main">
+            <p>2017 &copy;<a href="/">layui.com</a> MIT license</p>
+        </div>
+    </div>
+
+
+    <!--<script async src="assets/layui/adsbygoogle.js"></script>-->
+    <div class="site-tree-mobile layui-hide">
+        <i class="layui-icon">&#xe602;</i>
+    </div>
+    <div class="site-mobile-shade"></div>
+    <script src="assets/layui/layui.js" charset="utf-8"></script>
+    <script>
+        layui.config({
+            base: 'assets/layui/js/',
+            version: false
+        }).use('global');
+
+        window.global = {
+            preview: function () {
+                var preview = document.getElementById('LAY_preview');
+                return preview ? preview.innerHTML : '';
+            }()
+        };
+
+
+        function loadPage(object) {
+            if (object.getAttribute("value") == null || object.getAttribute("value") == "") {
+                return;
+            }
+
+
+            $('#iframepage').attr('src', object.getAttribute("value"));
+//            $('#iframepage').attr('src', "http://127.0.0.1:8020/h5gplot/index.html");
+
+            var arr = object.name.split("_");
+            if (arr[0] != null) {
+                document.getElementById("stile1").style.display = "";
+                $("#stile1").text(arr[0])
+            }
+            if (arr[0] == null) {
+                document.getElementById("stile1").style.display = "none";
+            }
+            if (arr[1] != null) {
+                document.getElementById("stile2").style.display = "";
+                $("#stile2").text(arr[1])
+            }
+            if (arr[1] == null) {
+                document.getElementById("stile2").style.display = "none";
+            }
+
+        }
+
+        function reinitIframe() {
+            var iframe = document.getElementById("iframepage");
+            try {
+
+                var bHeight = iframe.contentWindow.document.body.scrollHeight;
+                var dHeight = iframe.contentWindow.document.documentElement.scrollHeight;
+                //  console.log("bHeight:"+bHeight+",dHeight:"+dHeight);
+                var height = Math.max(bHeight, dHeight);
+                iframe.height = height;
+            } catch (ex) {
+            }
+            //window.clearInterval(timer1);
+        }
+
+        var timer1 = window.setInterval("reinitIframe()", 500); //定时开始
+        //
+        function reinitIframeEND() {
+            var iframe = document.getElementById("iframepage");
+            try {
+                var bHeight = iframe.contentWindow.document.body.scrollHeight;
+                var dHeight = iframe.contentWindow.document.documentElement.scrollHeight;
+                console.log("bHeight:" + bHeight + ",dHeight:" + dHeight);
+                var height = Math.max(bHeight, dHeight);
+                iframe.height = height;
+            } catch (ex) {
+            }
+            // 停止定时
+            window.clearInterval(timer1);
+        }
+        var bool = true;
+        function onchangeMenu() {
+            if (bool == true) {
+                document.getElementById("menuId1").style.display = "none";
+                document.getElementById("menuId2").style.display = "block";
+                document.getElementById("breviary1").style.marginLeft = "-125px"
+                document.getElementById("breviary2").style.marginLeft = "-125px"
+                document.getElementById("breviary3").style.marginLeft = "-125px"
+                bool = false;
+            }
+            else {
+                document.getElementById("menuId1").style.display = "block";
+                document.getElementById("menuId2").style.display = "none";
+                document.getElementById("breviary1").style.marginLeft = "0px";
+                document.getElementById("breviary2").style.marginLeft = "0px";
+                document.getElementById("breviary3").style.marginLeft = "0px";
+
+                bool = true;
+            }
+        }
+
+
+        $('#Fullscreen').bind('click', function () {
+            var fullscreenElement = document.fullscreenElement || document.mozFullScreenElement || document.webkitFullscreenElement;
+            if (fullscreenElement == null) {
+                requestFullScreen();
+                $(this).html("退出全屏");
+            } else {
+                exitFullscreen();
+                $(this).html("进入全屏");
+
+            }
+
+
+        });
+        //进入全屏
+        function requestFullScreen() {
+
+            var de = document.documentElement;
+            if (de.requestFullscreen) {
+                de.requestFullscreen();
+            } else if (de.mozRequestFullScreen) {
+                de.mozRequestFullScreen();
+            } else if (de.webkitRequestFullScreen) {
+                de.webkitRequestFullScreen();
+            }
+        }
+        //退出全屏
+        function exitFullscreen() {
+            var de = document;
+            if (de.exitFullscreen) {
+                de.exitFullscreen();
+            } else if (de.mozCancelFullScreen) {
+                de.mozCancelFullScreen();
+            } else if (de.webkitCancelFullScreen) {
+                de.webkitCancelFullScreen();
+            }
+        }
+
+
+        function showTips(obj) {
+            if (obj.getAttribute("name") == null || obj.getAttribute("name") == "") {
+                return;
+            }
+            layer.tips(obj.getAttribute("name"), obj, {
+                tips: 2,
+                time: 1500
+            });
+
+        }
+
+
+    </script>
+
+
+</div>
+</body>
+</html>

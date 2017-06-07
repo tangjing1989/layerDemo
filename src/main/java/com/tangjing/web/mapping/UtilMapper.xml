@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tangjing.web.dao.UtilMapper">
+
+    <select id="commonQuerySum" resultType="int" parameterType="map">
+        select count(-1) FROM ${tableName}
+        <where>
+            <foreach collection="params.keys" item="k" open="(" close=")" separator="and">
+                ${k} = #{params[${k}]}
+            </foreach>
+        </where>
+    </select>
+
+    <select id="commonQueryPojo" resultType="java.util.Map" parameterType="map">
+        select * FROM ${tableName}
+        <where>
+            <foreach collection="params.keys" item="k" open="(" close=")" separator="and">
+                ${k} = #{params[${k}]}
+            </foreach>
+        </where>
+    </select>
+</mapper>

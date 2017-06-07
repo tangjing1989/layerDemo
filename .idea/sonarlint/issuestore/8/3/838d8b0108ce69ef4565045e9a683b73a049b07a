@@ -1,0 +1,14 @@
+
+sjavascript:S3776"TRefactor this function to reduce its Cognitive Complexity from 38 to the 15 allowed.(ÛÀéÔıÿÿÿÿ
+Pjavascript:S1854"7Remove this useless assignment to local variable "util"(­ÚÇd
+Fjavascript:CommentedCode"Remove this commented out code.(®ŠéÒûÿÿÿÿ
+Fjavascript:CommentedCode"Remove this commented out code.(áºô¤şÿÿÿÿ
+^javascript:OneStatementPerLine"6Reformat the code to have only one statement per line.(‚¬÷
+{javascript:S2703"aAdd the "let", "const" or "var" keyword to this declaration of "adsbygoogle" to make it explicit.(èô´ú
+Wjavascript:UnusedVariable"5Remove the declaration of the unused 'util' variable.(­ÚÇd
+Fjavascript:CommentedCode"Remove this commented out code.(¤Ü¿õûÿÿÿÿ
+Ajavascript:CommentedCode"Remove this commented out code.(Íåº…
+;javascript:S1116"Remove this empty statement.(¼ëËÌúÿÿÿÿ
+Œjavascript:S3827"m"layui" does not exist. Change its name or declare it so that its usage doesn't result in a "ReferenceError".(ÛÀéÔıÿÿÿÿ
+wjavascript:S3699"XRemove this use of the output from this function; this function doesn't return anything.(¼ëËÌúÿÿÿÿ
+Qjavascript:S1854"7Remove this useless assignment to local variable "stop"(ü›§†

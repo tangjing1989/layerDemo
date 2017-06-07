@@ -1,0 +1,355 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>基本信息</title>
+    <link rel="stylesheet" th:href="${#httpServletRequest.getContextPath()}+'/assets/layui/css/layui.css'" media="all">
+    <script th:src="${#httpServletRequest.getContextPath()}+'/assets/jquery/jquery-1.12.4.js'"></script>
+    <script th:src="${#httpServletRequest.getContextPath()}+'/assets/layui/layui.js'" charset="utf-8"></script>
+    <script th:src="${#httpServletRequest.getContextPath()}+'/assets/layui/js/common.js'" charset="utf-8"></script>
+    <script th:src="${#httpServletRequest.getContextPath()}+'/assets/echarts/echarts.min.js'"></script>
+    <script th:src="${#httpServletRequest.getContextPath()}+'/assets/echarts/echarts-liquidfill.js'"></script>
+</head>
+<body style="background-color: rgba(0,0,0,0);">
+
+<div>
+    <div class="layui-inline" id="pieId1" style="width: 260px;height:280px;"></div>
+    <div class="layui-inline" id="pieId2" style="width: 260px;height:280px;"></div>
+    <div class="layui-inline" id="pieId3" style="width: 260px;height:280px;"></div>
+</div>
+
+<div class="layui-collapse" lay-accordion="" lay-filter="collapse" style="padding-top: 15px" style="width: 97%">
+    <div class="layui-colla-item">
+        <h2 class="layui-colla-title">服务器信息</h2>
+        <div class="layui-colla-content ">
+            <table class="layui-table">
+                <tr>
+                    <td width="30%">服务器域名</td>
+                    <td width="70%">vip-admin.com</td>
+                </tr>
+                <tr>
+                    <td>服务器标识</td>
+                    <td>Linux ebs-2315 2.6.32-642.6.2.el6.x86_64 #1 SMP Wed Oct 26 06:52:09 UTC 2016 x86_64</td>
+                </tr>
+                <tr>
+                    <td>服务器操作系统</td>
+                    <td>Linux</td>
+                </tr>
+                <tr>
+                    <td>服务器解译引擎</td>
+                    <td>Apache</td>
+                </tr>
+                <tr>
+                    <td>服务器语言</td>
+                    <td>zh-CN,zh;q=0.8</td>
+                </tr>
+                <tr>
+                    <td>服务器端口</td>
+                    <td>80</td>
+                </tr>
+                <tr>
+                    <td>服务器主机名</td>
+                    <td>134.202.78.124.broad.xw.sh.dynamic.163data.com.cn</td>
+                </tr>
+                <tr>
+                    <td>站点名称</td>
+                    <td>vip-admin 管理系统</td>
+                </tr>
+                <tr>
+                    <td>目录物理路径</td>
+                    <td>/home/tu1145457389ntnui1b1d4l58445q793e8y9/wwwroot</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="layui-colla-item">
+        <h2 class="layui-colla-title">数据库信息</h2>
+        <div class="layui-colla-content">
+            <table class="layui-table">
+                <tr>
+                    <td width="30%">数据库类型</td>
+                    <td width="70%">tu1145457389</td>
+                </tr>
+                <tr>
+                    <td>数据库版本</td>
+                    <td>5.6.22</td>
+                </tr>
+                <tr>
+                    <td>数据库名称</td>
+                    <td>1.42M</td>
+                </tr>
+                <tr>
+                    <td>数据库编码格式</td>
+                    <td>1.42M</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="layui-colla-item">
+        <h2 class="layui-colla-title">软件信息</h2>
+        <div class="layui-colla-content">
+            <table class="layui-table">
+                <tr>
+                    <td width="30%">软件名称</td>
+                    <td width="70%">vip-admin 管理系统</td>
+                </tr>
+                <tr>
+                    <td>系统版本</td>
+                    <td>v1.0.5</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="layui-colla-item">
+        <h2 class="layui-colla-title">JAVA相关参数</h2>
+        <div class="layui-colla-content">
+            <table class="layui-table">
+                <tr>
+                    <td width="30%">Java的虚拟机名称</td>
+                    <td width="70%"> Java HotSpot(TM) 64-Bit Server VM</td>
+                </tr>
+                <tr>
+                    <td>Java的运行环境版本</td>
+                    <td> 1.8.0_92</td>
+                </tr>
+                <tr>
+                    <td>JVM可以使用的剩余内存</td>
+                    <td>128M</td>
+                </tr>
+                <tr>
+                    <td>JVM可以使用的总内存</td>
+                    <td>8M</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script th:inline="javascript">//引用
+/*<![CDATA[*/
+layui.use(['layer', 'element'], function () {
+    var layer = layui.layer, element = layui.element();
+
+    //监听折叠
+    element.on('collapse(collapse)', function (data) {
+        //  layer.msg('展开状态：'+ data.show);
+    });
+
+    // you code ...
+
+
+});
+
+//var op11 =/*[[${serverInfoPojo.sumCpuFreeMhz}]]*/;
+//var op12 =/*[[${serverInfoPojo.sumCpuUsedMhz}]]*/;
+//var op13 =/*[[${serverInfoPojo.sumMemUsedSize}]]*/;
+//var op14 =/*[[${serverInfoPojo.sumResidueSize}]]*/;
+//var op15 =/*[[${serverInfoPojo.sumDiskFreeSize}]]*/;
+//var op16 =/*[[${serverInfoPojo.sumDiskUsedSize}]]*/;
+
+var op1 =/*[[${serverInfoPojo.sumCpuUsedMhz}]]*/;
+var op2 =/*[[${serverInfoPojo.sumMemUsedRate}]]*/;
+var op3 =/*[[${serverInfoPojo.sumDiskUsedRate}]]*/;
+
+
+var myChart1 = echarts.init(document.getElementById('pieId1'));
+var myChart2 = echarts.init(document.getElementById('pieId2'));
+var myChart3 = echarts.init(document.getElementById('pieId3'));
+
+
+option1 = {
+    title: {
+        "text": 'CPU使用率',
+        "x": '50%',
+        "y": '50%',
+        textAlign: "center",
+        "textStyle": {
+            "fontWeight": 'normal',
+            "fontSize": 12
+
+        },
+
+    },
+    series: [{
+        type: 'liquidFill',
+        data: [op1, 0.5, 0.4, 0.3],
+        radius: '50%',
+        shape: 'diamond',
+        label: {
+            normal: {
+                textStyle: {
+                    color: 'red',
+                    insideColor: 'yellow',
+                    fontSize: 12
+                }
+            }
+        }
+    }]
+};
+
+option2 = {
+    title: {
+        "text": '内存使用率',
+        "x": '50%',
+        "y": '50%',
+        textAlign: "center",
+        "textStyle": {
+            "fontWeight": 'normal',
+            "fontSize": 12
+
+        },
+
+    },
+    series: [{
+        type: 'liquidFill',
+        data: [op2, 0.5, 0.4, 0.3],
+        radius: '50%',
+        shape: 'roundRect',
+        label: {
+            normal: {
+                textStyle: {
+                    color: 'red',
+                    insideColor: 'yellow',
+                    fontSize: 12
+                }
+            }
+        }
+    }]
+};
+option3 = {
+    title: {
+        "text": 'DISK使用率',
+        "x": '50%',
+        "y": '50%',
+        textAlign: "center",
+        shape: 'rect',
+        "textStyle": {
+            "fontWeight": 'normal',
+            "fontSize": 12
+
+        },
+
+    },
+    series: [{
+        type: 'liquidFill',
+        data: [op3, 0.5, 0.4, 0.3],
+        radius: '50%',
+        label: {
+            normal: {
+                textStyle: {
+                    color: 'red',
+                    insideColor: 'yellow',
+                    fontSize: 12
+                }
+            }
+        }
+    }]
+};
+//option1 = {
+//    tooltip: {
+//        formatter: "{a} <br/>{b} : {c}%"
+//    },
+//    series: [
+//        {
+//            name: 'CPU占用率',
+//            type: 'gauge',
+//            detail: {formatter: '{value}%'},
+//            data: [{value: op1, name: 'CPU'}]
+//        }
+//    ]
+//};
+//option2 = {
+//    tooltip: {
+//        formatter: "{a} <br/>{b} : {c}%"
+//    },
+//    series: [
+//        {
+//            name: '内存占用率',
+//            type: 'gauge',
+//            detail: {formatter: '{value}%'},
+//            data: [{value: op2, name: '内存'}]
+//        }
+//    ]
+//};
+//option3 = {
+//    tooltip: {
+//        formatter: "{a} <br/>{b} : {c}%"
+//    },
+//    series: [
+//        {
+//            name: '硬盘占用率',
+//            type: 'gauge',
+//            detail: {formatter: '{value}%'},
+//            data: [{value: op3, name: '硬盘'}]
+//        }
+//    ]
+//};
+//option3 = {
+//    title: {
+//        subtext: '硬盘监控',
+//        x: 'center'
+//    },
+//    tooltip: {
+//        trigger: 'item',
+//        formatter: "{a} <br/>{b}: {c} GB ({d}%)"
+//    },
+//    legend: {
+//        orient: 'vertical',
+//        left: 'left',
+//        data: ['硬盘空闲', '硬盘使用']
+//    },
+//    series: [
+//        {
+//            name: '访问来源',
+//            type: 'pie',
+//            radius: '55%',
+//            center: ['50%', '60%'],
+//            labelLine: {
+//                normal: {
+//                    show: true,
+//                    length:0.001
+//                }
+//            },
+//            data: [
+//                {value: op5, name: '硬盘空闲'},
+//                {value: op6, name: '硬盘使用'}
+//            ],
+//            itemStyle: {
+//                emphasis: {
+//                    shadowBlur: 10,
+//                    shadowOffsetX: 0,
+//                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+//                }
+//            }
+//        }
+//    ]
+//};
+
+
+function querySysinfo() {
+    $.ajax({
+        type: "post",
+        url: 'querySysInfo.json',
+        dataType: "json",
+        traditional: true,//这里设置为true
+        success: function (datajson) {
+            option1.series[0].data[0]=datajson.sumCpuUsedMhz;
+            option2.series[0].data[0] =datajson.sumMemUsedRate;
+            option3.series[0].data[0] =datajson.sumDiskUsedRate;
+            myChart1.setOption(option1);
+            myChart2.setOption(option2);
+            myChart3.setOption(option3);
+        }
+    });
+}
+
+setInterval("querySysinfo()",3000);
+myChart1.setOption(option1);
+myChart2.setOption(option2);
+myChart3.setOption(option3);
+/*]]>*/
+</script>
+</body>
+</html>

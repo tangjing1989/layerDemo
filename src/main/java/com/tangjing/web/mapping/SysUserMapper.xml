@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tangjing.web.dao.SysUserMapper">
+    <!-- redis缓存 -->
+    <!--<cache eviction="LRU" type="com.cn.web.redis2.RedisCache"/>-->
+    <resultMap id="UserMaper" type="com.tangjing.web.pojo.UserPojo">
+        <id column="USERID" property="userId" javaType="int" jdbcType="INTEGER"></id>
+        <result column="USERNAME" property="userName" javaType="string" jdbcType="VARCHAR"></result>
+        <result column="USERCODE" property="userCode" javaType="string" jdbcType="VARCHAR"></result>
+        <result column="PASSWORD" property="password" javaType="string" jdbcType="VARCHAR"></result>
+        <result column="CRTDATE" property="crtDate" javaType="java.sql.Timestamp" jdbcType="TIMESTAMP"></result>
+        <result column="UPTDATE" property="uptDate" javaType="java.sql.Timestamp" jdbcType="TIMESTAMP"></result>
+        <result column="ROWNO" property="rowNumber" javaType="String" jdbcType="VARCHAR"></result>
+    </resultMap>
+
+    <select id="count" resultType="int">
+        SELECT COUNT (-1) from USER
+    </select>
+
+    <select id="queryUserByUserName" resultMap="UserMaper">
+        SELECT * FROM USER
+        <where>
+            <if test="userName!=null and userName!=''">
+                AND USERCODE=#{userName}
+            </if>
+            <if test="password !=null and password!=''">
+                And PASSWORD=#{password}
+            </if>
+        </where>
+    </select>
+
+
+    <select id="queryUserList" resultMap="UserMaper">
+        SELECT @rowno:=@rowno+1 as rowno,r.* from user r,(select @rowno:=0) t
+    </select>
+
+    <select id="queryUserListCount" resultType="int" parameterType="map">
+        SELECT count(-1) FROM USER
+        <where>
+            <if test='pojo.paramMap.param1!=null and pojo.paramMap.param1!=""'>
+                <![CDATA[ AND CRTDATE >= #{pojo.paramMap.param1}  ]]>
+            </if>
+            <if test='pojo.paramMap.param2!=null and pojo.paramMap.param2!=""'>
+                <![CDATA[ AND CRTDATE <= #{pojo.paramMap.param2} ]]>
+            </if>
+            <if test='pojo.paramMap.param3!=null and pojo.paramMap.param3!=""'>
+                <![CDATA[ AND USERNAME <= #{pojo.paramMap.param3} ]]>
+            </if>
+        </where>
+
+    </select>
+
+    <select id="queryUserListPage" resultMap="UserMaper" parameterType="map">
+        select * from (
+        SELECT
+        @rowno :=@rowno + 1 AS rowno ,
+        r.*
+        
+        FROM
+        USER r ,
+        (SELECT @rowno := 0) t
+        <where>
+            <if test='pojo.paramMap.param1!=null and pojo.paramMap.param1!=""'>
+                <![CDATA[ AND CRTDATE >= #{pojo.paramMap.param1}  ]]>
+            </if>
+            <if test='pojo.paramMap.param2!=null and pojo.paramMap.param2!=""'>
+                <![CDATA[ AND CRTDATE <= #{pojo.paramMap.param2} ]]>
+            </if>
+            <if test='pojo.paramMap.param3!=null and pojo.paramMap.param3!=""'>
+                <![CDATA[ AND USERNAME like '%${pojo.paramMap.param3}%' ]]>
+            </if>
+        </where>
+        order by r.userId asc
+        ) temp
+
+        Limit #{pojo.start},#{pojo.end}
+
+    </select>
+</mapper>

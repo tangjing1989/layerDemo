@@ -1,0 +1,80 @@
+
+^javascript:S3358"DExtract this nested ternary operation into an independent statement.(·¶ş±
+Djavascript:BitwiseOperators"Remove the use of "~" operator.(ƒà¾…
+]javascript:S3358"DExtract this nested ternary operation into an independent statement.(Üõ%
+ƒ#javascript:NonEmptyCaseWithoutBreak"VEnd this switch case with an unconditional break, continue, return or throw statement.(ëÔ²
+`javascript:SwitchWithoutDefault"2Add a "default" clause to this "switch" statement.(ÛíöÁùÿÿÿÿ
+Qjavascript:S1135"2Complete the task associated to this TODO comment.(õ«Âƒÿÿÿÿÿ
+Xjavascript:ForIn"9Restrict what this loop acts on by testing each property.(Øñ“€şÿÿÿÿ
+Qjavascript:S1135"2Complete the task associated to this TODO comment.(µÄ˜üÿÿÿÿ
+yjavascript:S1067"ZReduce the number of conditional operators (5) used in the expression (maximum allowed 3).(¡ó¥Úüÿÿÿÿ
+Djavascript:BitwiseOperators"Remove the use of "~" operator.(ƒà¾…
+Rjavascript:S1854"8Remove this useless assignment to local variable "match"(¹èÂÁ
+^javascript:S3358"DExtract this nested ternary operation into an independent statement.(¼Å«¼
+Mjavascript:EmptyBlock")Either remove or fill this block of code.(èâïÏøÿÿÿÿ
+Djavascript:BitwiseOperators"Remove the use of "~" operator.(ƒà¾…
+]javascript:S3358"DExtract this nested ternary operation into an independent statement.(Ï‘–X
+cjavascript:S2583"DChange this condition so that it does not always evaluate to "true".(›â’•ûÿÿÿÿ
+Qjavascript:S1135"2Complete the task associated to this TODO comment.(™†Á¹úÿÿÿÿ
+‚javascript:S1871"cEither merge this branch with the identical one on line "668" or change one of the implementations.(ª¶á†ûÿÿÿÿ
+vjavascript:S3759"WRemove this access to "_locale" property, it doesn't exist, as a built-in, on a Number.(Ó›Åîÿÿÿÿÿ
+Ajavascript:CommentedCode"Remove this commented out code.(«ŠÛš
+yjavascript:S1067"ZReduce the number of conditional operators (4) used in the expression (maximum allowed 3).(Ä°³çşÿÿÿÿ
+cjavascript:S2583"DChange this condition so that it does not always evaluate to "true".(ãúŸ³ÿÿÿÿÿ
+^javascript:S2583"DChange this condition so that it does not always evaluate to "true".(ß’×
+Djavascript:BitwiseOperators"Remove the use of "~" operator.(ƒà¾…
+Qjavascript:S1135"2Complete the task associated to this TODO comment.(ÜÌíŒùÿÿÿÿ
+cjavascript:S3358"DExtract this nested ternary operation into an independent statement.(ÿ››Şøÿÿÿÿ
+^javascript:S3358"DExtract this nested ternary operation into an independent statement.(Ú¾şã
+cjavascript:S3358"DExtract this nested ternary operation into an independent statement.(´ ¤Ãşÿÿÿÿ
+ˆ#javascript:NonEmptyCaseWithoutBreak"VEnd this switch case with an unconditional break, continue, return or throw statement.(ÀŸêÉøÿÿÿÿ
+Sjavascript:ForIn"9Restrict what this loop acts on by testing each property.(é€û¨
+ƒ#javascript:NonEmptyCaseWithoutBreak"VEnd this switch case with an unconditional break, continue, return or throw statement.(™ĞŸ
+Fjavascript:S930"-"fn" expects 1 argument, but 2 were provided.(ƒËÈ·
+cjavascript:S2583"DChange this condition so that it does not always evaluate to "true".(èˆ¸ûşÿÿÿÿ
+~javascript:S1488"_Immediately return this expression instead of assigning it to the temporary variable "_moment".(ß°éßûÿÿÿÿ
+}javascript:S1871"cEither merge this branch with the identical one on line "670" or change one of the implementations.(«‚ğ–
+]javascript:S3358"DExtract this nested ternary operation into an independent statement.(°×ø'
+Ijavascript:BitwiseOperators"Remove the use of "~" operator.(êõ²µüÿÿÿÿ
+tjavascript:S1067"ZReduce the number of conditional operators (7) used in the expression (maximum allowed 3).(âº¡
+‚#javascript:NonEmptyCaseWithoutBreak"VEnd this switch case with an unconditional break, continue, return or throw statement.(å«¬
+cjavascript:S2583"DChange this condition so that it does not always evaluate to "true".(¹Ş‹¸şÿÿÿÿ
+^javascript:S3358"DExtract this nested ternary operation into an independent statement.(’·îÍ
+Ijavascript:BitwiseOperators"Remove the use of "~" operator.(êõ²µüÿÿÿÿ
+cjavascript:S3358"DExtract this nested ternary operation into an independent statement.(±À¦üÿÿÿÿ
+bjavascript:S2259"CTypeError can be thrown as "input" might be null or undefined here.(Ó›Åîÿÿÿÿÿ
+tjavascript:S1186"ZAdd a nested comment explaining why this function is empty or complete the implementation.(‡æÛº
+Xjavascript:ForIn"9Restrict what this loop acts on by testing each property.(õöà¾ÿÿÿÿÿ
+ˆjavascript:S2234"oArguments to "positiveMomentsDifference" have the same names but not the same order as the function parameters.(£¹Üd
+yjavascript:S1186"ZAdd a nested comment explaining why this function is empty or complete the implementation.(ÄÁößüÿÿÿÿ
+^javascript:S3358"DExtract this nested ternary operation into an independent statement.(çÌ’
+^javascript:S2583"DChange this condition so that it does not always evaluate to "true".(êå‚ë
+cjavascript:S3358"DExtract this nested ternary operation into an independent statement.(şÕ¾İùÿÿÿÿ
+ujavascript:S1067"[Reduce the number of conditional operators (20) used in the expression (maximum allowed 3).(ß’×
+tjavascript:S1186"ZAdd a nested comment explaining why this function is empty or complete the implementation.(·™ƒê
+yjavascript:S1067"ZReduce the number of conditional operators (4) used in the expression (maximum allowed 3).(’¬Ëøùÿÿÿÿ
+yjavascript:S1067"ZReduce the number of conditional operators (5) used in the expression (maximum allowed 3).(Í´€ûÿÿÿÿ
+]javascript:S3358"DExtract this nested ternary operation into an independent statement.(ÕÍÏd
+^javascript:S3358"DExtract this nested ternary operation into an independent statement.(‡‚ÆÏ
+^javascript:S3358"DExtract this nested ternary operation into an independent statement.(æä±
+Ijavascript:S930"0"toInt" expects 1 argument, but 2 were provided.(Ù–øŸ
+Ijavascript:BitwiseOperators"Remove the use of "~" operator.(ËâÏøûÿÿÿÿ
+ojavascript:S3776"URefactor this function to reduce its Cognitive Complexity from 917 to the 15 allowed.(Îƒ‚¤
+Qjavascript:S1135"2Complete the task associated to this TODO comment.(£”×şÿÿÿÿ
+tjavascript:S1067"ZReduce the number of conditional operators (6) used in the expression (maximum allowed 3).(¬¿‹Û
+cjavascript:S2583"DChange this condition so that it does not always evaluate to "true".(É›Ç ùÿÿÿÿ
+^javascript:S2583"DChange this condition so that it does not always evaluate to "true".(–Üáõ
+cjavascript:S3358"DExtract this nested ternary operation into an independent statement.(Í‰Ûşÿÿÿÿ
+Qjavascript:S1135"2Complete the task associated to this TODO comment.(²»æûÿÿÿÿ
+^javascript:S2583"DChange this condition so that it does not always evaluate to "true".(¢±ï‰
+ˆ#javascript:NonEmptyCaseWithoutBreak"VEnd this switch case with an unconditional break, continue, return or throw statement.(şø ÿÿÿÿÿ
+^javascript:S3358"DExtract this nested ternary operation into an independent statement.(ĞşåÚ
+^javascript:S2583"DChange this condition so that it does not always evaluate to "true".(Ø —ø
+cjavascript:S3358"DExtract this nested ternary operation into an independent statement.(öÅ×Ùùÿÿÿÿ
+Ijavascript:BitwiseOperators"Remove the use of "~" operator.(ËâÏøûÿÿÿÿ
+cjavascript:S3358"DExtract this nested ternary operation into an independent statement.(çªëÉüÿÿÿÿ
+zjavascript:S1067"[Reduce the number of conditional operators (16) used in the expression (maximum allowed 3).(œíèªúÿÿÿÿ
+cjavascript:S3358"DExtract this nested ternary operation into an independent statement.(Ïö¨šÿÿÿÿÿ
+Qjavascript:S1135"2Complete the task associated to this TODO comment.(–„ëÆúÿÿÿÿ
+cjavascript:S3358"DExtract this nested ternary operation into an independent statement.(õóºÎùÿÿÿÿ
+^javascript:OneStatementPerLine"6Reformat the code to have only one statement per line.(º«Ç®
