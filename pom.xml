@@ -18,22 +18,25 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
+        <!--<tomcat.version>9.0.0.M17</tomcat.version>-->
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
         <!-- Compile -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+
+        <dependency>
+        <groupId>net.sourceforge.nekohtml</groupId>
+        <artifactId>nekohtml</artifactId>
+        <version>1.9.22</version>
         </dependency>
 
         <dependency>
@@ -52,7 +55,10 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-tomcat</artifactId>
+            <scope>provided</scope>
         </dependency>
+
+
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -60,11 +66,6 @@
             <optional>true</optional>
         </dependency>
 
-        <!--<dependency>-->
-        <!--<groupId>org.mybatis.spring.boot</groupId>-->
-        <!--<artifactId>mybatis-spring-boot-starter</artifactId>-->
-        <!--<version>1.1.1</version>-->
-        <!--</dependency>-->
 
         <dependency>
             <groupId>com.baomidou</groupId>
@@ -101,12 +102,6 @@
 
         <!--谷歌验证码-->
         <dependency>
-            <groupId>com.github.penggle</groupId>
-            <artifactId>kaptcha</artifactId>
-            <version>2.3.2</version>
-        </dependency>
-
-        <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
             <version>3.5</version>
@@ -131,22 +126,18 @@
         </dependency>
 
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-redis</artifactId>
-            <version>1.4.4.RELEASE</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
-            <version>1.5.1.RELEASE</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter-redis</artifactId>-->
+            <!--<version>1.4.4.RELEASE</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter-data-redis</artifactId>-->
+            <!--<version>1.5.1.RELEASE</version>-->
+        <!--</dependency>-->
 
-        <dependency>
-            <groupId>net.sourceforge.nekohtml</groupId>
-            <artifactId>nekohtml</artifactId>
-            <version>1.9.22</version>
-        </dependency>
+
         <!--热部署-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -194,95 +185,89 @@
         </dependency>
 
 
-        <dependency>
-            <groupId>org.kie</groupId>
-            <artifactId>kie-api</artifactId>
-            <version>6.3.0.Final</version>
-        </dependency>
-        <dependency>
-            <groupId>org.drools</groupId>
-            <artifactId>drools-core</artifactId>
-            <version>6.3.0.Final</version>
-        </dependency>
-        <dependency>
-            <groupId>org.drools</groupId>
-            <artifactId>drools-compiler</artifactId>
-            <version>6.3.0.Final</version>
-        </dependency>
-        <dependency>
-            <groupId>org.drools</groupId>
-            <artifactId>drools-decisiontables</artifactId>
-            <version>6.3.0.Final</version>
-        </dependency>
-        <dependency>
-            <groupId>org.drools</groupId>
-            <artifactId>drools-templates</artifactId>
-            <version>6.3.0.Final</version>
-        </dependency>
-        <!-- Esper Dependency -->
-        <dependency>
-            <groupId>com.espertech</groupId>
-            <artifactId>esper</artifactId>
-            <version>5.5.0</version>
-        </dependency>
-        <!-- Storm Dependency -->
-        <dependency>
-            <groupId>org.apache.storm</groupId>
-            <artifactId>storm-core</artifactId>
-            <version>1.1.0</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>ring-cors</groupId>
-                    <artifactId>ring-cors</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.kie</groupId>-->
+            <!--<artifactId>kie-api</artifactId>-->
+            <!--<version>6.3.0.Final</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.drools</groupId>-->
+            <!--<artifactId>drools-core</artifactId>-->
+            <!--<version>6.3.0.Final</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.drools</groupId>-->
+            <!--<artifactId>drools-compiler</artifactId>-->
+            <!--<version>6.3.0.Final</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.drools</groupId>-->
+            <!--<artifactId>drools-decisiontables</artifactId>-->
+            <!--<version>6.3.0.Final</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.drools</groupId>-->
+            <!--<artifactId>drools-templates</artifactId>-->
+            <!--<version>6.3.0.Final</version>-->
+        <!--</dependency>-->
+        <!--&lt;!&ndash; Esper Dependency &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>com.espertech</groupId>-->
+            <!--<artifactId>esper</artifactId>-->
+            <!--<version>5.5.0</version>-->
+        <!--</dependency>-->
+        <!--&lt;!&ndash; Storm Dependency &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.storm</groupId>-->
+            <!--<artifactId>storm-core</artifactId>-->
+            <!--<version>1.1.0</version>-->
+            <!--<exclusions>-->
+                <!--<exclusion>-->
+                    <!--<groupId>ring-cors</groupId>-->
+                    <!--<artifactId>ring-cors</artifactId>-->
+                <!--</exclusion>-->
+            <!--</exclusions>-->
+        <!--</dependency>-->
 
-        <!--dubbo 整合-->
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>dubbo</artifactId>
-            <version>2.5.3</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.springframework</groupId>
-                    <artifactId>spring</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.zookeeper</groupId>
-            <artifactId>zookeeper</artifactId>
-            <version>3.4.6</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.slf4j</groupId>
-                    <artifactId>slf4j-log4j12</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>log4j</groupId>
-                    <artifactId>log4j</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>com.github.sgroschupf</groupId>
-            <artifactId>zkclient</artifactId>
-            <version>0.1</version>
-        </dependency>
+        <!--&lt;!&ndash;dubbo 整合&ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>com.alibaba</groupId>-->
+            <!--<artifactId>dubbo</artifactId>-->
+            <!--<version>2.5.3</version>-->
+            <!--<exclusions>-->
+                <!--<exclusion>-->
+                    <!--<groupId>org.springframework</groupId>-->
+                    <!--<artifactId>spring</artifactId>-->
+                <!--</exclusion>-->
+            <!--</exclusions>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.zookeeper</groupId>-->
+            <!--<artifactId>zookeeper</artifactId>-->
+            <!--<version>3.4.6</version>-->
+            <!--<exclusions>-->
+                <!--<exclusion>-->
+                    <!--<groupId>org.slf4j</groupId>-->
+                    <!--<artifactId>slf4j-log4j12</artifactId>-->
+                <!--</exclusion>-->
+                <!--<exclusion>-->
+                    <!--<groupId>log4j</groupId>-->
+                    <!--<artifactId>log4j</artifactId>-->
+                <!--</exclusion>-->
+            <!--</exclusions>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>com.github.sgroschupf</groupId>-->
+            <!--<artifactId>zkclient</artifactId>-->
+            <!--<version>0.1</version>-->
+        <!--</dependency>-->
 
     </dependencies>
 
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>1.4.4.RELEASE</version>
-                <configuration>
-                    <fork>true</fork>
-                </configuration>
-            </plugin>
+
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
@@ -295,12 +280,20 @@
                 </configuration>
                 <dependencies>
                     <!-- spring热部署-->
-                    <dependency>
-                        <groupId>org.springframework</groupId>
-                        <artifactId>springloaded</artifactId>
-                        <version>1.2.1.RELEASE</version>
-                    </dependency>
+                    <!--<dependency>-->
+                        <!--<groupId>org.springframework</groupId>-->
+                        <!--<artifactId>springloaded</artifactId>-->
+                        <!--<version>1.2.1.RELEASE</version>-->
+                    <!--</dependency>-->
                 </dependencies>
+            </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>1.4.4.RELEASE</version>
+                <configuration>
+                    <fork>true</fork>
+                </configuration>
             </plugin>
         </plugins>
         <resources>

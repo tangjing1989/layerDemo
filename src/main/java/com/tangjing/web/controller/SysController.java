@@ -92,7 +92,7 @@ public class SysController {
             }
 
             //使用用户名密码查询是否存在该用户
-            HashMap<String, String> map = new HashMap<>();
+            HashMap<String, String> map = new HashMap<String, String>();
             map.put("userCode", userCode);
             map.put("password", password);
             List<Map<String, Object>> result = utilMapper.commonQueryPojo("user", map);

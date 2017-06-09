@@ -1,7 +1,16 @@
 
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ý…½…8³ÎÈäÇ+
-fsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÓæÙd8³ÎÈäÇ+
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(±Ÿž”8³ÎÈäÇ+
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ë¼ÌÈ8³ÎÈäÇ+
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ª¸ÂÏùÿÿÿÿ8³ÎÈäÇ+
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(âßï8³ÎÈäÇ+
+squid:UselessImportCheck"dRemove this unused import 'org.springframework.core.io.support.PathMatchingResourcePatternResolver'.(˜Ý“‹8‡•¥ºÈ+
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(åÉ¶˜8‡•¥ºÈ+
+|squid:UselessImportCheck"SRemove this unused import 'com.baomidou.mybatisplus.plugins.PaginationInterceptor'.(Ö×½“8‡•¥ºÈ+
+‹squid:UselessImportCheck"]Remove this unused import 'org.springframework.jdbc.datasource.DataSourceTransactionManager'.(ˆµÍýÿÿÿÿ8‡•¥ºÈ+
+fsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Â¿ïD8‡•¥ºÈ+
+[squid:UselessImportCheck"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8‡•¥ºÈ+
+ksquid:UselessImportCheck"CRemove this unused import 'com.alibaba.druid.pool.DruidDataSource'.(žË¸)8‡•¥ºÈ+
+‹squid:UselessImportCheck"bRemove this unused import 'org.springframework.web.servlet.config.annotation.PathMatchConfigurer'.(€ È£8‡•¥ºÈ+
+€squid:UselessImportCheck"WRemove this unused import 'org.springframework.transaction.PlatformTransactionManager'.(…­ÀÞ8‡•¥ºÈ+
+jsquid:UselessImportCheck"ARemove this unused import 'org.apache.ibatis.plugin.Interceptor'.(ø¿£õ8‡•¥ºÈ+
+—squid:UselessImportCheck"iRemove this unused import 'org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport'.(ƒ°›¾ýÿÿÿÿ8‡•¥ºÈ+
+_squid:UselessImportCheck"1Remove this unused import 'javax.sql.DataSource'.(ÉòÂ¿úÿÿÿÿ8‡•¥ºÈ+
+qsquid:UselessImportCheck"HRemove this unused import 'org.apache.ibatis.session.SqlSessionFactory'.(ÚÖ¦©8‡•¥ºÈ+
+jsquid:UselessImportCheck"ARemove this unused import 'org.springframework.core.io.Resource'.(¹ÒÁ8‡•¥ºÈ+
+~squid:UselessImportCheck"PRemove this unused import 'com.baomidou.mybatisplus.entity.GlobalConfiguration'.(ß‰™¶þÿÿÿÿ8‡•¥ºÈ+

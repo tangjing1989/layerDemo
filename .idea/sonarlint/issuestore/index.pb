@@ -319,3 +319,5 @@ S
 #.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
 9
 	layer.iml,d/6/d67fa4e3768d389db5ca4208543915825ea0b3f8
+g
+7src/main/java/com/tangjing/config/DataSourceManage.java,e/1/e1ed7e362094c1f7dc4a7ffe87392b913ec4aaef

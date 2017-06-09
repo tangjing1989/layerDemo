@@ -1,36 +1,36 @@
-package com.tangjing.storm;
-
-import org.apache.storm.task.OutputCollector;
-import org.apache.storm.task.TopologyContext;
-import org.apache.storm.topology.OutputFieldsDeclarer;
-import org.apache.storm.topology.base.BaseRichBolt;
-import org.apache.storm.tuple.Fields;
-import org.apache.storm.tuple.Tuple;
-import org.apache.storm.tuple.Values;
-
-import java.util.Map;
-
-/**
- * Describe:
- * User:tangjing
- * Date:2017/6/4
- * Time:下午12:22
- */
-public class SplitSentenceBolt extends BaseRichBolt {
-    private OutputCollector collector;
-    public void prepare(Map config, TopologyContext
-            context, OutputCollector collector) {
-        this.collector = collector;
-    }
-
-    public void execute(Tuple tuple) {
-        String sentence = tuple.getStringByField("sentences");
-        String[] words = sentence.split(" ");
-        for(String word : words){
-            this.collector.emit(new Values(word));
-        }
-    }
-    public void declareOutputFields(OutputFieldsDeclarer declarer) {
-        declarer.declare(new Fields("word"));
-    }
-}
+//package com.tangjing.storm;
+//
+//import org.apache.storm.task.OutputCollector;
+//import org.apache.storm.task.TopologyContext;
+//import org.apache.storm.topology.OutputFieldsDeclarer;
+//import org.apache.storm.topology.base.BaseRichBolt;
+//import org.apache.storm.tuple.Fields;
+//import org.apache.storm.tuple.Tuple;
+//import org.apache.storm.tuple.Values;
+//
+//import java.util.Map;
+//
+///**
+// * Describe:
+// * User:tangjing
+// * Date:2017/6/4
+// * Time:下午12:22
+// */
+//public class SplitSentenceBolt extends BaseRichBolt {
+//    private OutputCollector collector;
+//    public void prepare(Map config, TopologyContext
+//            context, OutputCollector collector) {
+//        this.collector = collector;
+//    }
+//
+//    public void execute(Tuple tuple) {
+//        String sentence = tuple.getStringByField("sentences");
+//        String[] words = sentence.split(" ");
+//        for(String word : words){
+//            this.collector.emit(new Values(word));
+//        }
+//    }
+//    public void declareOutputFields(OutputFieldsDeclarer declarer) {
+//        declarer.declare(new Fields("word"));
+//    }
+//}

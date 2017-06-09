@@ -1,33 +1,33 @@
 
-T
-squid:S106";Replace this usage of System.out or System.err by a logger.(¬Û³Éÿÿÿÿÿ
-O
-squid:S106";Replace this usage of System.out or System.err by a logger.(ß”¥ì
-^squid:S1609"IAnnotate the "Formula" interface with the @FunctionalInterface annotation(íÖ‹õ
-Lsquid:S1611"2Remove the parentheses around the "cost" parameter(¸ÆÎ ÿÿÿÿÿ
-Fsquid:S1612",Replace this lambda with a method reference.(‘“’ÿÿÿÿÿ
-T
-squid:S106";Replace this usage of System.out or System.err by a logger.(à‡öÿÿÿÿÿ
-`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¿íÍŞ
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ö»€Òüÿÿÿÿ
-`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ª×ë×
->squid:S1481"*Remove this unused "names" local variable.(Š‹÷
-Asquid:S1612",Replace this lambda with a method reference.(ß”¥ì
-[squid:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-T
-squid:S106";Replace this usage of System.out or System.err by a logger.(šìúàÿÿÿÿÿ
-T
-squid:S106";Replace this usage of System.out or System.err by a logger.(¸ÆÎ ÿÿÿÿÿ
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÎùËÈüÿÿÿÿ
-`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ğ½áª
-T
-squid:S106";Replace this usage of System.out or System.err by a logger.(¸é”¿ÿÿÿÿÿ
-O
-squid:S106";Replace this usage of System.out or System.err by a logger.(¥µ–Ë
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ä°•ÿøÿÿÿÿ
-`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ß‡üÓ
-T
-squid:S106";Replace this usage of System.out or System.err by a logger.(¬Û³Éÿÿÿÿÿ
-Msquid:S1854"9Remove this useless assignment to local variable "names".(Š‹÷
-]squid:UselessImportCheck";Remove this unused import 'com.tangjing.web.pojo.MenuPojo'.(’®ş
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ğ½áª8äæÈ+
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¿íÍŞ8åæÈ+
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ä°•ÿøÿÿÿÿ8åæÈ+
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÎùËÈüÿÿÿÿ8åæÈ+
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ö»€Òüÿÿÿÿ8åæÈ+
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ß‡üÓ8åæÈ+
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ª×ë×8åæÈ+
+[
+squid:S106";Replace this usage of System.out or System.err by a logger.(¬Û³Éÿÿÿÿÿ8åæÈ+
+[
+squid:S106";Replace this usage of System.out or System.err by a logger.(¬Û³Éÿÿÿÿÿ8åæÈ+
+[
+squid:S106";Replace this usage of System.out or System.err by a logger.(à‡öÿÿÿÿÿ8åæÈ+
+[
+squid:S106";Replace this usage of System.out or System.err by a logger.(¸é”¿ÿÿÿÿÿ8åæÈ+
+V
+squid:S106";Replace this usage of System.out or System.err by a logger.(¥µ–Ë8åæÈ+
+[
+squid:S106";Replace this usage of System.out or System.err by a logger.(šìúàÿÿÿÿÿ8åæÈ+
+[
+squid:S106";Replace this usage of System.out or System.err by a logger.(¸ÆÎ ÿÿÿÿÿ8åæÈ+
+V
+squid:S106";Replace this usage of System.out or System.err by a logger.(ß”¥ì8åæÈ+
+Esquid:S1481"*Remove this unused "names" local variable.(Š‹÷8åæÈ+
+bsquid:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8åæÈ+
+esquid:S1609"IAnnotate the "Formula" interface with the @FunctionalInterface annotation(íÖ‹õ8åæÈ+
+Tsquid:S1854"9Remove this useless assignment to local variable "names".(Š‹÷8åæÈ+
+Msquid:S1612",Replace this lambda with a method reference.(‘“’ÿÿÿÿÿ8åæÈ+
+Hsquid:S1612",Replace this lambda with a method reference.(ß”¥ì8åæÈ+
+Ssquid:S1611"2Remove the parentheses around the "cost" parameter(¸ÆÎ ÿÿÿÿÿ8åæÈ+
+dsquid:UselessImportCheck";Remove this unused import 'com.tangjing.web.pojo.MenuPojo'.(’®ş8åæÈ+
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8åæÈ+
