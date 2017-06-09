@@ -95,20 +95,20 @@ public class SysController {
             HashMap<String, String> map = new HashMap<String, String>();
             map.put("userCode", userCode);
             map.put("password", password);
-            List<Map<String, Object>> result = utilMapper.commonQueryPojo("user", map);
+            List<Map<String, Object>> result = utilMapper.commonQueryPojo("USER", map);
             List<UserPojo>            users  = BeanUtil.toBeanList(UserPojo.class, result);
             //如果用户不存在则进一步判断1：用户名是否存在；2.密码是否正确
             if (users.size() == 0) {
                 //判断是否存在该用户
                 map.clear();
                 map.put("userCode", userCode);
-                int sum1 = utilMapper.commonQuerySum("user", map);
+                int sum1 = utilMapper.commonQuerySum("USER", map);
                 if (sum1 == 0) {
                     throw new CustomException("USER_NOT_EXIST");
                 }
                 //判断用户名密码是否正确
                 map.put("password", password);
-                int sum2 = utilMapper.commonQuerySum("user", map);
+                int sum2 = utilMapper.commonQuerySum("USER", map);
                 if (sum2 == 0) {
                     throw new CustomException("lOGIN_ERROR");
                 }
